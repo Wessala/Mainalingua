@@ -1,0 +1,23 @@
+{
+  "Frutas": [
+    {"word": "La manzana", "image": "https://static.wixstatic.com/media/8d0b81_4ccc6ce3256a4d54bf43d34a812ba016~mv2.png"},
+    {"word": "El plátano", "image": "https://static.wixstatic.com/media/8d0b81_cfd9f750439d4aff907242f3ce8db3a0~mv2.png"},
+    {"word": "La pera", "image": "https://static.wixstatic.com/media/8d0b81_917202cb5ead49ddb0936d3d085e4474~mv2.png"},
+    {"word": "Las fresas", "image": "https://static.wixstatic.com/media/8d0b81_8025f02381164485abd63d7d3f893ef6~mv2.png"},
+    {"word": "Los arándanos", "image": "https://static.wixstatic.com/media/8d0b81_a11b1d0316b645c589ec9c09369678d8~mv2.png"},
+    {"word": "La toronja", "image": "https://static.wixstatic.com/media/8d0b81_8d88b31f18ec43cca3dc36cfbe900ac0~mv2.png"},
+    {"word": "La naranja", "image": "https://static.wixstatic.com/media/8d0b81_132d85c61544497fbf03776d30a1af8d~mv2.png"},
+    {"word": "Las frambuesas", "image": "https://static.wixstatic.com/media/8d0b81_660d6be4ee264f909106496e5b6dd5ca~mv2.png"},
+    {"word": "La lima", "image": "https://static.wixstatic.com/media/8d0b81_cbc88ef8b903422cb00c82f8a8585d64~mv2.png"},
+    {"word": "La sandía", "image": "https://static.wixstatic.com/media/8d0b81_d89a3dabb7894b4a822753440b23fc03~mv2.png"},
+    {"word": "La piña", "image": "https://static.wixstatic.com/media/8d0b81_2d2ae3cdf7d3428ca3a85bc5f7a85a90~mv2.png"},
+    {"word": "El limón", "image": "https://static.wixstatic.com/media/8d0b81_a0afd9fa8fbb450488260d87531204ea~mv2.png"},
+    {"word": "El durazno", "image": "https://static.wixstatic.com/media/8d0b81_b6ed47419eac4a869ef1fb09760bb18b~mv2.png"},
+    {"word": "El coco", "image": "https://static.wixstatic.com/media/8d0b81_9940bff846034bf7938ff21a5f4be7be~mv2.png"},
+    {"word": "La granada", "image": "https://static.wixstatic.com/media/8d0b81_3a8746c5709f45b681443edf8b80bcba~mv2.png"},
+    {"word": "El kiwi", "image": "https://static.wixstatic.com/media/8d0b81_4284ab91733949bab558b9043d38f723~mv2.png"},
+    {"word": "Las cerezas", "image": "https://static.wixstatic.com/media/8d0b81_75ae3d2e5048488aa6c71208dbf0cacb~mv2.png"},
+    {"word": "Las uvas", "image": "https://static.wixstatic.com/media/8d0b81_22548203e6a843ad819432feea214879~mv2.png"},
+    {"word": "El melón", "image": "https://static.wixstatic.com/media/8d0b81_d718ef9ef64b42c68e47eb1ee2345343~mv2.png"}
+  ]
+}
