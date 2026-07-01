@@ -95,6 +95,56 @@
       "image": "image/Animales_de_compañía/La_tortuga.png"
     }
   ],
+  "Animales_de_invierno": [
+    {
+      "word": "El búho nival",
+      "image": "image/Animales_de_invierno/El_búho_nival.png"
+    },
+    {
+      "word": "El caribú",
+      "image": "image/Animales_de_invierno/El_caribú.png"
+    },
+    {
+      "word": "El leopardo de las nieves",
+      "image": "image/Animales_de_invierno/El_leopardo_de_las_nieves.png"
+    },
+    {
+      "word": "El lobo ártico",
+      "image": "image/Animales_de_invierno/El_lobo_ártico.png"
+    },
+    {
+      "word": "El narval",
+      "image": "image/Animales_de_invierno/El_narval.png"
+    },
+    {
+      "word": "El oso polar",
+      "image": "image/Animales_de_invierno/El_oso_polar.png"
+    },
+    {
+      "word": "El perro esquimal",
+      "image": "image/Animales_de_invierno/El_perro_esquimal.png"
+    },
+    {
+      "word": "El pingüino",
+      "image": "image/Animales_de_invierno/El_pingüino.png"
+    },
+    {
+      "word": "El reno",
+      "image": "image/Animales_de_invierno/El_reno.png"
+    },
+    {
+      "word": "El zorro ártico",
+      "image": "image/Animales_de_invierno/El_zorro_ártico.png"
+    },
+    {
+      "word": "La liebre ártica",
+      "image": "image/Animales_de_invierno/La_liebre_ártica.png"
+    },
+    {
+      "word": "La morsa",
+      "image": "image/Animales_de_invierno/La_morsa.png"
+    }
+  ],
   "Descripciones_físicas": [
     {
       "word": "Alto",
