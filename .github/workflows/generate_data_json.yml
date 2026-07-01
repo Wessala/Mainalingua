@@ -3,7 +3,8 @@ name: Générer data.json automatiquement
 on:
   push:
     paths:
-      - 'images/**'
+      - 'image/**'
+  workflow_dispatch:
 
 jobs:
   generate:
@@ -17,7 +18,7 @@ jobs:
           python3 << 'PYEOF'
           import os, json
 
-          images_dir = "images"
+          images_dir = "image"
           data = {}
 
           if os.path.exists(images_dir):
@@ -31,28 +32,22 @@ jobs:
                   continue
                 if filename == '.gitkeep':
                   continue
-                # Nom du mot : underscores → espaces, enlever .png
                 word = filename[:-4].replace('_', ' ')
-                image_path = f"images/{theme}/{filename}"
+                image_path = f"image/{theme}/{filename}"
                 words.append({"word": word, "image": image_path})
               if words:
                 data[theme] = words
 
-          # Garder les thèmes avec URLs Wix (Frutas) — ne pas les écraser
           existing_path = "data.json"
           if os.path.exists(existing_path):
             with open(existing_path, 'r', encoding='utf-8') as f:
               existing = json.load(f)
-            # Pour chaque thème existant, garder si les images sont des URLs externes (Wix)
             for theme, items in existing.items():
               if theme not in data and items:
-                # Thème pas dans images/ — garder tel quel (ex: Frutas avec URLs Wix)
                 data[theme] = items
               elif theme in data:
-                # Si le thème existe dans images/, vérifier si l'existant a des URLs Wix
                 has_wix = any('wixstatic' in item.get('image','') for item in items)
                 if has_wix:
-                  # Garder la version Wix
                   data[theme] = items
 
           with open(existing_path, 'w', encoding='utf-8') as f:
