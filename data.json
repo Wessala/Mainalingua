@@ -269,6 +269,76 @@
       "image": "image/Animales_de_la_selva/La_serpiente.png"
     }
   ],
+  "Animales_del_bosque": [
+    {
+      "word": "El alce",
+      "image": "image/Animales_del_bosque/El_alce.png"
+    },
+    {
+      "word": "El búho",
+      "image": "image/Animales_del_bosque/El_búho.png"
+    },
+    {
+      "word": "El ciervo",
+      "image": "image/Animales_del_bosque/El_ciervo.png"
+    },
+    {
+      "word": "El conejo",
+      "image": "image/Animales_del_bosque/El_conejo.png"
+    },
+    {
+      "word": "El erizo",
+      "image": "image/Animales_del_bosque/El_erizo.png"
+    },
+    {
+      "word": "El jabali",
+      "image": "image/Animales_del_bosque/El_jabali.png"
+    },
+    {
+      "word": "El lobo",
+      "image": "image/Animales_del_bosque/El_lobo.png"
+    },
+    {
+      "word": "El mapache",
+      "image": "image/Animales_del_bosque/El_mapache.png"
+    },
+    {
+      "word": "El oso",
+      "image": "image/Animales_del_bosque/El_oso.png"
+    },
+    {
+      "word": "El puerco espín",
+      "image": "image/Animales_del_bosque/El_puerco_espín.png"
+    },
+    {
+      "word": "El ratón",
+      "image": "image/Animales_del_bosque/El_ratón.png"
+    },
+    {
+      "word": "El zorrillo",
+      "image": "image/Animales_del_bosque/El_zorrillo.png"
+    },
+    {
+      "word": "El águila",
+      "image": "image/Animales_del_bosque/El_águila.png"
+    },
+    {
+      "word": "La ardilla",
+      "image": "image/Animales_del_bosque/La_ardilla.png"
+    },
+    {
+      "word": "La hormiga",
+      "image": "image/Animales_del_bosque/La_hormiga.png"
+    },
+    {
+      "word": "La mariposa",
+      "image": "image/Animales_del_bosque/La_mariposa.png"
+    },
+    {
+      "word": "La mariquita",
+      "image": "image/Animales_del_bosque/La_mariquita.png"
+    }
+  ],
   "Descripciones_físicas": [
     {
       "word": "Alto",
