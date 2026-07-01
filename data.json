@@ -145,6 +145,68 @@
       "image": "image/Animales_de_invierno/La_morsa.png"
     }
   ],
+  "Animales_de_la_granja": [
+    {
+      "word": "El burro",
+      "image": "image/Animales_de_la_granja/El_burro.png"
+    },
+    {
+      "word": "El caballo",
+      "image": "image/Animales_de_la_granja/El_caballo.png"
+    },
+    {
+      "word": "El cerdo",
+      "image": "image/Animales_de_la_granja/El_cerdo.png"
+    },
+    {
+      "word": "El cisne",
+      "image": "image/Animales_de_la_granja/El_cisne.png"
+    },
+    {
+      "word": "El gallo",
+      "image": "image/Animales_de_la_granja/El_gallo.png"
+    },
+    {
+      "word": "El ganso",
+      "image": "image/Animales_de_la_granja/El_ganso.png"
+    },
+    {
+      "word": "El pato",
+      "image": "image/Animales_de_la_granja/El_pato.png"
+    },
+    {
+      "word": "El pavo",
+      "image": "image/Animales_de_la_granja/El_pavo.png"
+    },
+    {
+      "word": "El toro",
+      "image": "image/Animales_de_la_granja/El_toro.png"
+    },
+    {
+      "word": "El zorro",
+      "image": "image/Animales_de_la_granja/El_zorro.png"
+    },
+    {
+      "word": "La cabra",
+      "image": "image/Animales_de_la_granja/La_cabra.png"
+    },
+    {
+      "word": "La gallina",
+      "image": "image/Animales_de_la_granja/La_gallina.png"
+    },
+    {
+      "word": "La llama",
+      "image": "image/Animales_de_la_granja/La_llama.png"
+    },
+    {
+      "word": "La oveja",
+      "image": "image/Animales_de_la_granja/La_oveja.png"
+    },
+    {
+      "word": "La vaca",
+      "image": "image/Animales_de_la_granja/La_vaca.png"
+    }
+  ],
   "Descripciones_físicas": [
     {
       "word": "Alto",
