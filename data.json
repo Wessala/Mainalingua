@@ -45,6 +45,56 @@
       "image": "image/Adjetivos/Tranquilo.png"
     }
   ],
+  "Animales_de_compañía": [
+    {
+      "word": "El conejo",
+      "image": "image/Animales_de_compañía/El_conejo.png"
+    },
+    {
+      "word": "El gato",
+      "image": "image/Animales_de_compañía/El_gato.png"
+    },
+    {
+      "word": "El hurón",
+      "image": "image/Animales_de_compañía/El_hurón.png"
+    },
+    {
+      "word": "El hámster",
+      "image": "image/Animales_de_compañía/El_hámster.png"
+    },
+    {
+      "word": "El loro",
+      "image": "image/Animales_de_compañía/El_loro.png"
+    },
+    {
+      "word": "El periquito",
+      "image": "image/Animales_de_compañía/El_periquito.png"
+    },
+    {
+      "word": "El perro",
+      "image": "image/Animales_de_compañía/El_perro.png"
+    },
+    {
+      "word": "El pez rojo",
+      "image": "image/Animales_de_compañía/El_pez_rojo.png"
+    },
+    {
+      "word": "El pájaro",
+      "image": "image/Animales_de_compañía/El_pájaro.png"
+    },
+    {
+      "word": "La iguana",
+      "image": "image/Animales_de_compañía/La_iguana.png"
+    },
+    {
+      "word": "La serpiente",
+      "image": "image/Animales_de_compañía/La_serpiente.png"
+    },
+    {
+      "word": "La tortuga",
+      "image": "image/Animales_de_compañía/La_tortuga.png"
+    }
+  ],
   "Descripciones_físicas": [
     {
       "word": "Alto",
