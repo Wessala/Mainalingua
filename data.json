@@ -281,72 +281,6 @@
       "image": "https://static.wixstatic.com/media/8d0b81_d718ef9ef64b42c68e47eb1ee2345343~mv2.png"
     }
   ],
-  "Oficios": [
-    {
-      "word": "El albañil",
-      "image": "image/Oficios/El_albañil.png"
-    },
-    {
-      "word": "El carpintero",
-      "image": "image/Oficios/El_carpintero.png"
-    },
-    {
-      "word": "El electricista",
-      "image": "image/Oficios/El_electricista.png"
-    },
-    {
-      "word": "El fontanero",
-      "image": "image/Oficios/El_fontanero.png"
-    },
-    {
-      "word": "El fotógrafo",
-      "image": "image/Oficios/El_fotógrafo.png"
-    },
-    {
-      "word": "El guía",
-      "image": "image/Oficios/El_guía.png"
-    },
-    {
-      "word": "El jardinero",
-      "image": "image/Oficios/El_jardinero.png"
-    },
-    {
-      "word": "El mago",
-      "image": "image/Oficios/El_mago.png"
-    },
-    {
-      "word": "El marinero",
-      "image": "image/Oficios/El_marinero.png"
-    },
-    {
-      "word": "El militar",
-      "image": "image/Oficios/El_militar.png"
-    },
-    {
-      "word": "El oficial de policia",
-      "image": "image/Oficios/El_oficial_de_policia.png"
-    },
-    {
-      "word": "El payaso",
-      "image": "image/Oficios/El_payaso.png"
-    },
-    {
-      "word": "El trabajador de la construcción",
-      "image": "image/Oficios/El_trabajador_de_la_construcción.png"
-    },
-    {
-      "word": "La azafata",
-      "image": "image/Oficios/La_azafata.png"
-    },
-    {
-      "word": "La bibliotecaria",
-      "image": "image/Oficios/La_bibliotecaria.png"
-    },
-    {
-      "word": "La modelo",
-      "image": "image/Oficios/La_modelo.png"
-    }
-  ],
   "Otoño": [
     {
       "word": "El espantapájaros",
@@ -429,6 +363,72 @@
     {
       "word": "El veterinario",
       "image": "image/Profesiones/El_veterinario.png"
+    }
+  ],
+  "Oficios": [
+    {
+      "word": "El albañil",
+      "image": "image/Oficios/El_albañil.png"
+    },
+    {
+      "word": "El carpintero",
+      "image": "image/Oficios/El_carpintero.png"
+    },
+    {
+      "word": "El electricista",
+      "image": "image/Oficios/El_electricista.png"
+    },
+    {
+      "word": "El fontanero",
+      "image": "image/Oficios/El_fontanero.png"
+    },
+    {
+      "word": "El fotógrafo",
+      "image": "image/Oficios/El_fotógrafo.png"
+    },
+    {
+      "word": "El guía",
+      "image": "image/Oficios/El_guía.png"
+    },
+    {
+      "word": "El jardinero",
+      "image": "image/Oficios/El_jardinero.png"
+    },
+    {
+      "word": "El mago",
+      "image": "image/Oficios/El_mago.png"
+    },
+    {
+      "word": "El marinero",
+      "image": "image/Oficios/El_marinero.png"
+    },
+    {
+      "word": "El militar",
+      "image": "image/Oficios/El_militar.png"
+    },
+    {
+      "word": "El oficial de policia",
+      "image": "image/Oficios/El_oficial_de_policia.png"
+    },
+    {
+      "word": "El payaso",
+      "image": "image/Oficios/El_payaso.png"
+    },
+    {
+      "word": "El trabajador de la construcción",
+      "image": "image/Oficios/El_trabajador_de_la_construcción.png"
+    },
+    {
+      "word": "La azafata",
+      "image": "image/Oficios/La_azafata.png"
+    },
+    {
+      "word": "La bibliotecaria",
+      "image": "image/Oficios/La_bibliotecaria.png"
+    },
+    {
+      "word": "La modelo",
+      "image": "image/Oficios/La_modelo.png"
     }
   ]
 }
