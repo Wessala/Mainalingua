@@ -207,6 +207,68 @@
       "image": "image/Animales_de_la_granja/La_vaca.png"
     }
   ],
+  "Animales_de_la_selva": [
+    {
+      "word": "El canguro",
+      "image": "image/Animales_de_la_selva/El_canguro.png"
+    },
+    {
+      "word": "El elefante",
+      "image": "image/Animales_de_la_selva/El_elefante.png"
+    },
+    {
+      "word": "El hipopótamo",
+      "image": "image/Animales_de_la_selva/El_hipopótamo.png"
+    },
+    {
+      "word": "El leopardo",
+      "image": "image/Animales_de_la_selva/El_leopardo.png"
+    },
+    {
+      "word": "El león",
+      "image": "image/Animales_de_la_selva/El_león.png"
+    },
+    {
+      "word": "El loro",
+      "image": "image/Animales_de_la_selva/El_loro.png"
+    },
+    {
+      "word": "El mono",
+      "image": "image/Animales_de_la_selva/El_mono.png"
+    },
+    {
+      "word": "El oso hormiguero",
+      "image": "image/Animales_de_la_selva/El_oso_hormiguero.png"
+    },
+    {
+      "word": "El panda",
+      "image": "image/Animales_de_la_selva/El_panda.png"
+    },
+    {
+      "word": "El rinoceronte",
+      "image": "image/Animales_de_la_selva/El_rinoceronte.png"
+    },
+    {
+      "word": "El tigre",
+      "image": "image/Animales_de_la_selva/El_tigre.png"
+    },
+    {
+      "word": "El tucán",
+      "image": "image/Animales_de_la_selva/El_tucán.png"
+    },
+    {
+      "word": "La cebra",
+      "image": "image/Animales_de_la_selva/La_cebra.png"
+    },
+    {
+      "word": "La jirafa",
+      "image": "image/Animales_de_la_selva/La_jirafa.png"
+    },
+    {
+      "word": "La serpiente",
+      "image": "image/Animales_de_la_selva/La_serpiente.png"
+    }
+  ],
   "Descripciones_físicas": [
     {
       "word": "Alto",
