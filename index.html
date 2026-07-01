@@ -347,7 +347,12 @@ function getThemeFromURL() {
 }
 
 function goBack() {
-  window.location.href = 'themes.html';
+  // Remonte au parent (themes.html) ou navigue vers themes.html
+  if (window.parent && window.parent !== window) {
+    window.parent.location.href = 'themes.html';
+  } else {
+    window.location.href = 'themes.html';
+  }
 }
 
 async function loadTheme() {
