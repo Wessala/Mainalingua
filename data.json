@@ -1,72 +1,36 @@
-name: Générer data.json automatiquement
-
-on:
-  push:
-    paths:
-      - 'images/**'
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Générer data.json
-        run: |
-          python3 << 'PYEOF'
-          import os, json
-
-          images_dir = "images"
-          data = {}
-
-          if os.path.exists(images_dir):
-            for theme in sorted(os.listdir(images_dir)):
-              theme_path = os.path.join(images_dir, theme)
-              if not os.path.isdir(theme_path):
-                continue
-              words = []
-              for filename in sorted(os.listdir(theme_path)):
-                if not filename.lower().endswith('.png'):
-                  continue
-                if filename == '.gitkeep':
-                  continue
-                # Nom du mot : underscores → espaces, enlever .png
-                word = filename[:-4].replace('_', ' ')
-                image_path = f"images/{theme}/{filename}"
-                words.append({"word": word, "image": image_path})
-              if words:
-                data[theme] = words
-
-          # Garder les thèmes avec URLs Wix (Frutas) — ne pas les écraser
-          existing_path = "data.json"
-          if os.path.exists(existing_path):
-            with open(existing_path, 'r', encoding='utf-8') as f:
-              existing = json.load(f)
-            # Pour chaque thème existant, garder si les images sont des URLs externes (Wix)
-            for theme, items in existing.items():
-              if theme not in data and items:
-                # Thème pas dans images/ — garder tel quel (ex: Frutas avec URLs Wix)
-                data[theme] = items
-              elif theme in data:
-                # Si le thème existe dans images/, vérifier si l'existant a des URLs Wix
-                has_wix = any('wixstatic' in item.get('image','') for item in items)
-                if has_wix:
-                  # Garder la version Wix
-                  data[theme] = items
-
-          with open(existing_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-
-          print(f"✅ data.json généré avec {len(data)} thèmes")
-          for theme, items in data.items():
-            print(f"  - {theme}: {len(items)} mots")
-          PYEOF
-
-      - name: Commit data.json
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.json
-          git diff --staged --quiet || git commit -m "🤖 Mise à jour automatique de data.json"
-          git push
+{
+  "Frutas": [
+    {"word": "La manzana", "image": "https://static.wixstatic.com/media/8d0b81_4ccc6ce3256a4d54bf43d34a812ba016~mv2.png"},
+    {"word": "El plátano", "image": "https://static.wixstatic.com/media/8d0b81_cfd9f750439d4aff907242f3ce8db3a0~mv2.png"},
+    {"word": "La pera", "image": "https://static.wixstatic.com/media/8d0b81_917202cb5ead49ddb0936d3d085e4474~mv2.png"},
+    {"word": "Las fresas", "image": "https://static.wixstatic.com/media/8d0b81_8025f02381164485abd63d7d3f893ef6~mv2.png"},
+    {"word": "Los arándanos", "image": "https://static.wixstatic.com/media/8d0b81_a11b1d0316b645c589ec9c09369678d8~mv2.png"},
+    {"word": "La toronja", "image": "https://static.wixstatic.com/media/8d0b81_8d88b31f18ec43cca3dc36cfbe900ac0~mv2.png"},
+    {"word": "La naranja", "image": "https://static.wixstatic.com/media/8d0b81_132d85c61544497fbf03776d30a1af8d~mv2.png"},
+    {"word": "Las frambuesas", "image": "https://static.wixstatic.com/media/8d0b81_660d6be4ee264f909106496e5b6dd5ca~mv2.png"},
+    {"word": "La lima", "image": "https://static.wixstatic.com/media/8d0b81_cbc88ef8b903422cb00c82f8a8585d64~mv2.png"},
+    {"word": "La sandía", "image": "https://static.wixstatic.com/media/8d0b81_d89a3dabb7894b4a822753440b23fc03~mv2.png"},
+    {"word": "La piña", "image": "https://static.wixstatic.com/media/8d0b81_2d2ae3cdf7d3428ca3a85bc5f7a85a90~mv2.png"},
+    {"word": "El limón", "image": "https://static.wixstatic.com/media/8d0b81_a0afd9fa8fbb450488260d87531204ea~mv2.png"},
+    {"word": "El durazno", "image": "https://static.wixstatic.com/media/8d0b81_b6ed47419eac4a869ef1fb09760bb18b~mv2.png"},
+    {"word": "El coco", "image": "https://static.wixstatic.com/media/8d0b81_9940bff846034bf7938ff21a5f4be7be~mv2.png"},
+    {"word": "La granada", "image": "https://static.wixstatic.com/media/8d0b81_3a8746c5709f45b681443edf8b80bcba~mv2.png"},
+    {"word": "El kiwi", "image": "https://static.wixstatic.com/media/8d0b81_4284ab91733949bab558b9043d38f723~mv2.png"},
+    {"word": "Las cerezas", "image": "https://static.wixstatic.com/media/8d0b81_75ae3d2e5048488aa6c71208dbf0cacb~mv2.png"},
+    {"word": "Las uvas", "image": "https://static.wixstatic.com/media/8d0b81_22548203e6a843ad819432feea214879~mv2.png"},
+    {"word": "El melón", "image": "https://static.wixstatic.com/media/8d0b81_d718ef9ef64b42c68e47eb1ee2345343~mv2.png"}
+  ],
+  "Adjetivos": [
+    {"word": "Frío", "image": "images/Adjetivos/Frio.png"},
+    {"word": "Caliente", "image": "images/Adjetivos/Caliente.png"},
+    {"word": "Amable", "image": "images/Adjetivos/Amable.png"},
+    {"word": "Ruidoso", "image": "images/Adjetivos/Ruidoso.png"},
+    {"word": "Aventurero", "image": "images/Adjetivos/Aventurero.png"},
+    {"word": "Alegre", "image": "images/Adjetivos/Alegre.png"},
+    {"word": "Enérgico", "image": "images/Adjetivos/Energico.png"},
+    {"word": "Inteligente", "image": "images/Adjetivos/Inteligente.png"},
+    {"word": "Tranquilo", "image": "images/Adjetivos/Tranquilo.png"},
+    {"word": "Limpio", "image": "images/Adjetivos/Limpio.png"},
+    {"word": "Nervioso", "image": "images/Adjetivos/Nervioso.png"}
+  ]
+}
