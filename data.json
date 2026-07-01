@@ -339,6 +339,48 @@
       "image": "image/Animales_del_bosque/La_mariquita.png"
     }
   ],
+  "Continentes_océanos": [
+    {
+      "word": "Antártida",
+      "image": "image/Continentes_océanos/Antártida.png"
+    },
+    {
+      "word": "Asia",
+      "image": "image/Continentes_océanos/Asia.png"
+    },
+    {
+      "word": "Australia",
+      "image": "image/Continentes_océanos/Australia.png"
+    },
+    {
+      "word": "El Océano Índico",
+      "image": "image/Continentes_océanos/El_Océano_Índico.png"
+    },
+    {
+      "word": "El océano Atlántico",
+      "image": "image/Continentes_océanos/El_océano_Atlántico.png"
+    },
+    {
+      "word": "El océano Pacífico",
+      "image": "image/Continentes_océanos/El_océano_Pacífico.png"
+    },
+    {
+      "word": "Europa",
+      "image": "image/Continentes_océanos/Europa.png"
+    },
+    {
+      "word": "Norteamérica",
+      "image": "image/Continentes_océanos/Norteamérica.png"
+    },
+    {
+      "word": "Sudamérica",
+      "image": "image/Continentes_océanos/Sudamérica.png"
+    },
+    {
+      "word": "África",
+      "image": "image/Continentes_océanos/África.png"
+    }
+  ],
   "Descripciones_físicas": [
     {
       "word": "Alto",
