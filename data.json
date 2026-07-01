@@ -19,5 +19,18 @@
     {"word": "Las cerezas", "image": "https://static.wixstatic.com/media/8d0b81_75ae3d2e5048488aa6c71208dbf0cacb~mv2.png"},
     {"word": "Las uvas", "image": "https://static.wixstatic.com/media/8d0b81_22548203e6a843ad819432feea214879~mv2.png"},
     {"word": "El melón", "image": "https://static.wixstatic.com/media/8d0b81_d718ef9ef64b42c68e47eb1ee2345343~mv2.png"}
+  ],
+  "Adjetivos": [
+    {"word": "Frío", "image": "images/Adjetivos/Frio.png"},
+    {"word": "Caliente", "image": "images/Adjetivos/Caliente.png"},
+    {"word": "Amable", "image": "images/Adjetivos/Amable.png"},
+    {"word": "Ruidoso", "image": "images/Adjetivos/Ruidoso.png"},
+    {"word": "Aventurero", "image": "images/Adjetivos/Aventurero.png"},
+    {"word": "Alegre", "image": "images/Adjetivos/Alegre.png"},
+    {"word": "Enérgico", "image": "images/Adjetivos/Energico.png"},
+    {"word": "Inteligente", "image": "images/Adjetivos/Inteligente.png"},
+    {"word": "Tranquilo", "image": "images/Adjetivos/Tranquilo.png"},
+    {"word": "Limpio", "image": "images/Adjetivos/Limpio.png"},
+    {"word": "Nervioso", "image": "images/Adjetivos/Nervioso.png"}
   ]
 }
