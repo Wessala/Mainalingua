@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Poppins', sans-serif; background: #F5F3FC; min-height: 100vh; display: flex; }
+
+  /* NAV GAUCHE */
+  .side-nav { position: fixed; left: 0; top: 0; height: 100vh; width: 210px; background: #341A72; display: flex; flex-direction: column; padding: 20px 12px; z-index: 100; gap: 6px; overflow-y: auto; transition: transform 0.3s ease; }
+  .side-nav.hidden { transform: translateX(-210px); }
+  .side-nav-logo { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 800; color: white; margin-bottom: 4px; padding: 0 4px; }
+  .side-nav-label { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; padding: 0 4px; }
+  .side-nav-btn { padding: 9px 12px; border-radius: 10px; border: none; background: rgba(255,255,255,0.1); font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.9); cursor: pointer; text-align: left; transition: all 0.2s; }
+  .side-nav-btn:hover { background: rgba(255,255,255,0.25); color: white; }
+  .toggle-nav-btn { position: fixed; left: 220px; top: 14px; z-index: 200; background: #341A72; color: white; border: none; border-radius: 0 8px 8px 0; padding: 8px 12px; cursor: pointer; font-size: 16px; transition: left 0.3s ease; box-shadow: 2px 2px 8px rgba(61,30,140,0.3); }
+  .toggle-nav-btn.collapsed { left: 0px; }
+
+  /* CONTENU */
+  .main-content { position: relative; margin-left: 210px; flex: 1; padding: 40px 36px; transition: margin-left 0.3s ease; overflow: hidden; }
+  .main-content.full { margin-left: 0; }
+  .bg-deco svg { position: absolute; opacity: 0.26; fill: none; }
+.bg-deco svg:nth-child(1) { top: 1.5%; left: 3%; width: 64px; transform: rotate(12deg);}
+.bg-deco svg:nth-child(2) { top: 2%; left: 16%; width: 48px; transform: rotate(-10deg);}
+.bg-deco svg:nth-child(3) { top: 1%; right: 4%; width: 70px; transform: rotate(-14deg);}
+.bg-deco svg:nth-child(4) { top: 3%; right: 17%; width: 45px; transform: rotate(9deg);}
+.bg-deco svg:nth-child(5) { top: 8%; left: 2%; width: 42px; transform: rotate(7deg);}
+.bg-deco svg:nth-child(6) { top: 14%; left: 2%; width: 53px; transform: rotate(-8deg);}
+.bg-deco svg:nth-child(7) { top: 24%; left: 4%; width: 62px; transform: rotate(14deg);}
+.bg-deco svg:nth-child(8) { top: 35%; left: 1.5%; width: 48px; transform: rotate(-12deg);}
+.bg-deco svg:nth-child(9) { top: 46%; left: 3%; width: 56px; transform: rotate(10deg);}
+.bg-deco svg:nth-child(10) { top: 57%; left: 2%; width: 45px; transform: rotate(-6deg);}
+.bg-deco svg:nth-child(11) { top: 68%; left: 4%; width: 59px; transform: rotate(15deg);}
+.bg-deco svg:nth-child(12) { top: 79%; left: 2%; width: 50px; transform: rotate(-10deg);}
+.bg-deco svg:nth-child(13) { top: 14%; right: 2%; width: 56px; transform: rotate(10deg);}
+.bg-deco svg:nth-child(14) { top: 24%; right: 4%; width: 48px; transform: rotate(-14deg);}
+.bg-deco svg:nth-child(15) { top: 35%; right: 1.5%; width: 64px; transform: rotate(8deg);}
+.bg-deco svg:nth-child(16) { top: 46%; right: 3%; width: 45px; transform: rotate(-9deg);}
+.bg-deco svg:nth-child(17) { top: 57%; right: 2%; width: 59px; transform: rotate(13deg);}
+.bg-deco svg:nth-child(18) { top: 68%; right: 4%; width: 48px; transform: rotate(-7deg);}
+.bg-deco svg:nth-child(19) { top: 79%; right: 2%; width: 53px; transform: rotate(11deg);}
+.bg-deco svg:nth-child(20) { top: 92%; left: 4%; width: 56px; transform: rotate(-10deg);}
+.bg-deco svg:nth-child(21) { top: 94%; left: 18%; width: 42px; transform: rotate(8deg);}
+.bg-deco svg:nth-child(22) { top: 93%; right: 5%; width: 64px; transform: rotate(12deg);}
+.bg-deco svg:nth-child(23) { top: 95%; right: 19%; width: 45px; transform: rotate(-9deg);}
+.bg-deco svg:nth-child(24) { top: 88%; right: 2%; width: 39px; transform: rotate(-7deg);}  .page-header,.page-header, .section { position: relative; z-index: 1; }
+  @media (max-width: 1100px) {
+    .bg-deco svg.ws-side-deco { display: none; }
+  }
+
+
+  /* HEADER */
+  .page-header { text-align: center; margin-bottom: 40px; padding-top: 8px; }
+  .page-title { font-family: 'Montserrat', sans-serif; font-size: 48px; font-weight: 900; color: #341A72; letter-spacing: -1px; }
+  .page-title::after { content: ""; display: block; width: 64px; height: 5px; background: #F47B20; border-radius: 3px; margin: 10px auto 0; }
+  .page-subtitle { font-size: 16px; color: #8678A8; font-weight: 400; margin-top: 14px; }
+
+  /* SECTIONS */
+  .section { max-width: 900px; margin: 0 auto 40px; scroll-margin-top: 32px; }
+  .letter { font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: 900; color: #341A72; text-align: center; margin-bottom: 16px; padding: 6px 0; border-bottom: 3px solid #F47B20; display: inline-block; min-width: 60px; }
+  .letter-wrap { text-align: center; margin-bottom: 16px; }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .card { background: white; border: 2px solid #E5DFF5; border-radius: 14px; padding: 18px 12px; text-align: center; cursor: pointer; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; color: #341A72; line-height: 1.4; box-shadow: 0 2px 8px rgba(61,30,140,0.06); transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 10px 22px rgba(61,30,140,0.16); border-color: #F47B20; }
+
+  @media (max-width: 768px) {
+    .side-nav { transform: translateX(-210px); }
+    .side-nav.visible { transform: translateX(0); }
+    .toggle-nav-btn { left: 0px; top: 14px; }
+    .toggle-nav-btn.expanded { left: 210px; }
+    .main-content { margin-left: 0; padding: 18px 12px; }
+    .page-title { font-size: 26px; padding: 6px 18px; }
+    .page-subtitle { font-size: 14px; }
+    .side-nav-btn { padding: 11px 12px; font-size: 14px; }
+    .section { margin-bottom: 30px; }
+    .letter { font-size: 20px; }
+    .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .card { padding: 16px 10px; font-size: 13px; word-break: normal; overflow-wrap: normal; }
+  }
+  @media (max-width: 420px) {
+    .main-content { padding: 14px 8px; }
+    .page-title { font-size: 22px; padding: 5px 14px; }
+    .grid { gap: 8px; }
+    .card { padding: 14px 8px; font-size: 12.5px; }
+  }
+</style>
+</head>
+<body>
+
+<button class="toggle-nav-btn" id="toggleBtn" onclick="toggleNav()">☰</button>
+
+<nav class="side-nav" id="sideNav">
+  <div class="side-nav-logo" id="navLogo">Thèmes</div>
+  <div class="side-nav-label" id="navLabel">Lettres</div>
+  <div id="letterNav"></div>
+</nav>
+
+<div class="main-content" id="mainContent">
+
+  <div class="bg-deco">
+    <svg viewBox="0 0 36 28"><path d="M18 6C14 3 8 2 3 3V23C8 22 14 23 18 26C22 23 28 22 33 23V3C28 2 22 3 18 6Z" stroke="#C9B8E8" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/><path d="M18 6V26" stroke="#C9B8E8" stroke-width="1.1" stroke-linecap="round"/></svg>
+    <svg viewBox="0 0 40 36"><path d="M6 17C6 9 13 3 21 3C30 3 36 9 36 16C36 23 30 29 21 29C19 29 17 28.7 15 28C12.5 31 8.5 33 5 33C7.5 30.5 9 27.5 8.5 24.5C7 22.5 6 20 6 17Z" stroke="#C9B8E8" stroke-width="1.05" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17" stroke="#C9B8E8" stroke-width="1.2"/><ellipse cx="20" cy="20" rx="7" ry="17" stroke="#C9B8E8" stroke-width="1.2"/><path d="M3 20H37" stroke="#C9B8E8" stroke-width="1.2"/><path d="M5.5 11H34.5M5.5 29H34.5" stroke="#C9B8E8" stroke-width="1.2"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M12 1L14.7 8.6L23 9.2L16.6 14.7L18.7 23L12 18.3L5.3 23L7.4 14.7L1 9.2L9.3 8.6L12 1Z" stroke="#C9B8E8" stroke-width="1.02" stroke-linejoin="round"/></svg>
+    <svg viewBox="0 0 36 32"><path d="M6 4H15C15 1 19 1 19 4H30V13C33 13 33 17 30 17V28H19C19 31 15 31 15 28H6V17C3 17 3 13 6 13V4Z" stroke="#C9B8E8" stroke-width="1.16" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    <svg viewBox="0 0 36 28"><path d="M18 6C14 3 8 2 3 3V23C8 22 14 23 18 26C22 23 28 22 33 23V3C28 2 22 3 18 6Z" stroke="#C9B8E8" stroke-width="1.11" stroke-linejoin="round" stroke-linecap="round"/><path d="M18 6V26" stroke="#C9B8E8" stroke-width="1.11" stroke-linecap="round"/></svg>
+    <svg viewBox="0 0 40 36"><path d="M6 17C6 9 13 3 21 3C30 3 36 9 36 16C36 23 30 29 21 29C19 29 17 28.7 15 28C12.5 31 8.5 33 5 33C7.5 30.5 9 27.5 8.5 24.5C7 22.5 6 20 6 17Z" stroke="#C9B8E8" stroke-width="1.02" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17" stroke="#C9B8E8" stroke-width="1.15"/><ellipse cx="20" cy="20" rx="7" ry="17" stroke="#C9B8E8" stroke-width="1.15"/><path d="M3 20H37" stroke="#C9B8E8" stroke-width="1.15"/><path d="M5.5 11H34.5M5.5 29H34.5" stroke="#C9B8E8" stroke-width="1.15"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M12 1L14.7 8.6L23 9.2L16.6 14.7L18.7 23L12 18.3L5.3 23L7.4 14.7L1 9.2L9.3 8.6L12 1Z" stroke="#C9B8E8" stroke-width="1.01" stroke-linejoin="round"/></svg>
+    <svg viewBox="0 0 36 32"><path d="M6 4H15C15 1 19 1 19 4H30V13C33 13 33 17 30 17V28H19C19 31 15 31 15 28H6V17C3 17 3 13 6 13V4Z" stroke="#C9B8E8" stroke-width="1.13" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    <svg viewBox="0 0 36 28"><path d="M18 6C14 3 8 2 3 3V23C8 22 14 23 18 26C22 23 28 22 33 23V3C28 2 22 3 18 6Z" stroke="#C9B8E8" stroke-width="1.02" stroke-linejoin="round" stroke-linecap="round"/><path d="M18 6V26" stroke="#C9B8E8" stroke-width="1.02" stroke-linecap="round"/></svg>
+    <svg viewBox="0 0 40 36"><path d="M6 17C6 9 13 3 21 3C30 3 36 9 36 16C36 23 30 29 21 29C19 29 17 28.7 15 28C12.5 31 8.5 33 5 33C7.5 30.5 9 27.5 8.5 24.5C7 22.5 6 20 6 17Z" stroke="#C9B8E8" stroke-width="1.03" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17" stroke="#C9B8E8" stroke-width="1.13"/><ellipse cx="20" cy="20" rx="7" ry="17" stroke="#C9B8E8" stroke-width="1.13"/><path d="M3 20H37" stroke="#C9B8E8" stroke-width="1.13"/><path d="M5.5 11H34.5M5.5 29H34.5" stroke="#C9B8E8" stroke-width="1.13"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M12 1L14.7 8.6L23 9.2L16.6 14.7L18.7 23L12 18.3L5.3 23L7.4 14.7L1 9.2L9.3 8.6L12 1Z" stroke="#C9B8E8" stroke-width="1.25" stroke-linejoin="round"/></svg>
+    <svg viewBox="0 0 36 32"><path d="M6 4H15C15 1 19 1 19 4H30V13C33 13 33 17 30 17V28H19C19 31 15 31 15 28H6V17C3 17 3 13 6 13V4Z" stroke="#C9B8E8" stroke-width="1.04" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    <svg viewBox="0 0 36 28"><path d="M18 6C14 3 8 2 3 3V23C8 22 14 23 18 26C22 23 28 22 33 23V3C28 2 22 3 18 6Z" stroke="#C9B8E8" stroke-width="1.07" stroke-linejoin="round" stroke-linecap="round"/><path d="M18 6V26" stroke="#C9B8E8" stroke-width="1.07" stroke-linecap="round"/></svg>
+    <svg viewBox="0 0 40 36"><path d="M6 17C6 9 13 3 21 3C30 3 36 9 36 16C36 23 30 29 21 29C19 29 17 28.7 15 28C12.5 31 8.5 33 5 33C7.5 30.5 9 27.5 8.5 24.5C7 22.5 6 20 6 17Z" stroke="#C9B8E8" stroke-width="1.19" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17" stroke="#C9B8E8" stroke-width="1.28"/><ellipse cx="20" cy="20" rx="7" ry="17" stroke="#C9B8E8" stroke-width="1.28"/><path d="M3 20H37" stroke="#C9B8E8" stroke-width="1.28"/><path d="M5.5 11H34.5M5.5 29H34.5" stroke="#C9B8E8" stroke-width="1.28"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M12 1L14.7 8.6L23 9.2L16.6 14.7L18.7 23L12 18.3L5.3 23L7.4 14.7L1 9.2L9.3 8.6L12 1Z" stroke="#C9B8E8" stroke-width="1.17" stroke-linejoin="round"/></svg>
+    <svg viewBox="0 0 36 32"><path d="M6 4H15C15 1 19 1 19 4H30V13C33 13 33 17 30 17V28H19C19 31 15 31 15 28H6V17C3 17 3 13 6 13V4Z" stroke="#C9B8E8" stroke-width="1.12" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    <svg viewBox="0 0 36 28"><path d="M18 6C14 3 8 2 3 3V23C8 22 14 23 18 26C22 23 28 22 33 23V3C28 2 22 3 18 6Z" stroke="#C9B8E8" stroke-width="1.29" stroke-linejoin="round" stroke-linecap="round"/><path d="M18 6V26" stroke="#C9B8E8" stroke-width="1.29" stroke-linecap="round"/></svg>
+    <svg viewBox="0 0 40 36"><path d="M6 17C6 9 13 3 21 3C30 3 36 9 36 16C36 23 30 29 21 29C19 29 17 28.7 15 28C12.5 31 8.5 33 5 33C7.5 30.5 9 27.5 8.5 24.5C7 22.5 6 20 6 17Z" stroke="#C9B8E8" stroke-width="1.01" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17" stroke="#C9B8E8" stroke-width="1.26"/><ellipse cx="20" cy="20" rx="7" ry="17" stroke="#C9B8E8" stroke-width="1.26"/><path d="M3 20H37" stroke="#C9B8E8" stroke-width="1.26"/><path d="M5.5 11H34.5M5.5 29H34.5" stroke="#C9B8E8" stroke-width="1.26"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M12 1L14.7 8.6L23 9.2L16.6 14.7L18.7 23L12 18.3L5.3 23L7.4 14.7L1 9.2L9.3 8.6L12 1Z" stroke="#C9B8E8" stroke-width="1.09" stroke-linejoin="round"/></svg>
+  </div>
+
+  <div class="page-header">
+    <div class="page-title" id="title">Thèmes</div>
+    <div class="page-subtitle" id="subtitle">Choisissez un thème pour commencer</div>
+  </div>
+
+  <div class="section" id="section-A"><div class="letter-wrap"><div class="letter">A</div></div><div class="grid"><div class="card" onclick="navigate('Adjetivos')">Adjetivos</div><div class="card" onclick="navigate('Alfabeto')">Alfabeto</div><div class="card" onclick="navigate('Alimentos básicos')">Alimentos básicos</div><div class="card" onclick="navigate('Amor')">Amor</div><div class="card" onclick="navigate('Animales de compañía')">Animales de compañía</div><div class="card" onclick="navigate('Animales de invierno')">Animales de invierno</div><div class="card" onclick="navigate('Animales de la granja')">Animales de la granja</div><div class="card" onclick="navigate('Animales de la selva')">Animales de la selva</div><div class="card" onclick="navigate('Animales del bosque')">Animales del bosque</div></div></div>
+  <div class="section" id="section-B"><div class="letter-wrap"><div class="letter">B</div></div><div class="grid"><div class="card" onclick="navigate('Bebidas')">Bebidas</div></div></div>
+  <div class="section" id="section-C"><div class="letter-wrap"><div class="letter">C</div></div><div class="grid"><div class="card" onclick="navigate('Camping/acampar')">Camping/acampar</div><div class="card" onclick="navigate('Cantidades')">Cantidades</div><div class="card" onclick="navigate('Clima')">Clima</div><div class="card" onclick="navigate('Colores primarios')">Colores primarios</div><div class="card" onclick="navigate('Comidas')">Comidas</div><div class="card" onclick="navigate('Continentes océanos')">Continentes océanos</div></div></div>
+  <div class="section" id="section-D"><div class="letter-wrap"><div class="letter">D</div></div><div class="grid"><div class="card" onclick="navigate('Deportes de equipo')">Deportes de equipo</div><div class="card" onclick="navigate('Deportes de invierno')">Deportes de invierno</div><div class="card" onclick="navigate('Deportes de verano')">Deportes de verano</div><div class="card" onclick="navigate('Deportes individuales')">Deportes individuales</div><div class="card" onclick="navigate('Desayuno')">Desayuno</div><div class="card" onclick="navigate('Descripciones físicas')">Descripciones físicas</div><div class="card" onclick="navigate('Direcciones')">Direcciones</div><div class="card" onclick="navigate('Dormitorio/habitación')">Dormitorio/habitación</div><div class="card" onclick="navigate('Días de la semana')">Días de la semana</div></div></div>
+  <div class="section" id="section-E"><div class="letter-wrap"><div class="letter">E</div></div><div class="grid"><div class="card" onclick="navigate('El mar')">El mar</div><div class="card" onclick="navigate('El vecindario')">El vecindario</div><div class="card" onclick="navigate('Electrodomésticos')">Electrodomésticos</div><div class="card" onclick="navigate('Emociones negativas')">Emociones negativas</div><div class="card" onclick="navigate('Emociones neutras')">Emociones neutras</div><div class="card" onclick="navigate('Emociones positivas')">Emociones positivas</div><div class="card" onclick="navigate('Enfermedades')">Enfermedades</div><div class="card" onclick="navigate('Estaciones')">Estaciones</div></div></div>
+  <div class="section" id="section-F"><div class="letter-wrap"><div class="letter">F</div></div><div class="grid"><div class="card" onclick="navigate('Feliz cumpleaños')">Feliz cumpleaños</div><div class="card" onclick="navigate('Frutas')">Frutas</div></div></div>
+  <div class="section" id="section-H"><div class="letter-wrap"><div class="letter">H</div></div><div class="grid"><div class="card" onclick="navigate('Habitaciones de la casa')">Habitaciones de la casa</div><div class="card" onclick="navigate('Hogar')">Hogar</div></div></div>
+  <div class="section" id="section-I"><div class="letter-wrap"><div class="letter">I</div></div><div class="grid"><div class="card" onclick="navigate('Invierno')">Invierno</div></div></div>
+  <div class="section" id="section-J"><div class="letter-wrap"><div class="letter">J</div></div><div class="grid"><div class="card" onclick="navigate('Juguetes')">Juguetes</div></div></div>
+  <div class="section" id="section-L"><div class="letter-wrap"><div class="letter">L</div></div><div class="grid"><div class="card" onclick="navigate('La escuela')">La escuela</div><div class="card" onclick="navigate('La familia')">La familia</div><div class="card" onclick="navigate('La hora')">La hora</div><div class="card" onclick="navigate('Las formas')">Las formas</div><div class="card" onclick="navigate('Los condimentos')">Los condimentos</div></div></div>
+  <div class="section" id="section-M"><div class="letter-wrap"><div class="letter">M</div></div><div class="grid"><div class="card" onclick="navigate('Mas colores')">Mas colores</div><div class="card" onclick="navigate('Me gusta, no me gusta')">Me gusta, no me gusta</div><div class="card" onclick="navigate('Medidas')">Medidas</div><div class="card" onclick="navigate('Modales')">Modales</div><div class="card" onclick="navigate('Muebles')">Muebles</div></div></div>
+  <div class="section" id="section-N"><div class="letter-wrap"><div class="letter">N</div></div><div class="grid"><div class="card" onclick="navigate('Noche de brujas')">Noche de brujas</div><div class="card" onclick="navigate('Números')">Números</div></div></div>
+  <div class="section" id="section-O"><div class="letter-wrap"><div class="letter">O</div></div><div class="grid"><div class="card" onclick="navigate('Oficios')">Oficios</div><div class="card" onclick="navigate('Ordinales')">Ordinales</div><div class="card" onclick="navigate('Otoño')">Otoño</div></div></div>
+  <div class="section" id="section-P"><div class="letter-wrap"><div class="letter">P</div></div><div class="grid"><div class="card" onclick="navigate('Paisajes')">Paisajes</div><div class="card" onclick="navigate('Partes del cuerpo')">Partes del cuerpo</div><div class="card" onclick="navigate('Pasatiempos')">Pasatiempos</div><div class="card" onclick="navigate('Postres')">Postres</div><div class="card" onclick="navigate('Preposiciones de lugar')">Preposiciones de lugar</div><div class="card" onclick="navigate('Primavera')">Primavera</div><div class="card" onclick="navigate('Profesiones')">Profesiones</div></div></div>
+  <div class="section" id="section-R"><div class="letter-wrap"><div class="letter">R</div></div><div class="grid"><div class="card" onclick="navigate('Ropa')">Ropa</div><div class="card" onclick="navigate('Ropa de invierno')">Ropa de invierno</div><div class="card" onclick="navigate('Rutinas')">Rutinas</div></div></div>
+  <div class="section" id="section-S"><div class="letter-wrap"><div class="letter">S</div></div><div class="grid"><div class="card" onclick="navigate('Sabores')">Sabores</div><div class="card" onclick="navigate('Saludos')">Saludos</div><div class="card" onclick="navigate('Sentidos')">Sentidos</div><div class="card" onclick="navigate('Sentimientos')">Sentimientos</div><div class="card" onclick="navigate('Sonidos')">Sonidos</div><div class="card" onclick="navigate('Sustantivos contables')">Sustantivos contables</div><div class="card" onclick="navigate('Sustantivos incontables')">Sustantivos incontables</div></div></div>
+  <div class="section" id="section-T"><div class="letter-wrap"><div class="letter">T</div></div><div class="grid"><div class="card" onclick="navigate('Transporte')">Transporte</div></div></div>
+  <div class="section" id="section-U"><div class="letter-wrap"><div class="letter">U</div></div><div class="grid"><div class="card" onclick="navigate('Universo espacial')">Universo espacial</div><div class="card" onclick="navigate('Utensilios de cocina')">Utensilios de cocina</div><div class="card" onclick="navigate('Utensilios de jardín')">Utensilios de jardín</div></div></div>
+  <div class="section" id="section-V"><div class="letter-wrap"><div class="letter">V</div></div><div class="grid"><div class="card" onclick="navigate('Vegetales/verduras')">Vegetales/verduras</div><div class="card" onclick="navigate('Verano')">Verano</div><div class="card" onclick="navigate('Verbos')">Verbos</div><div class="card" onclick="navigate('Viajar')">Viajar</div><div class="card" onclick="navigate('Viajar en tren')">Viajar en tren</div></div></div>
+
+</div>
+
+<script>
+  const letters = ['A','B','C','D','E','F','H','I','J','L','M','N','O','P','R','S','T','U','V'];
+  const nav = document.getElementById('letterNav');
+  letters.forEach(l => {
+    const btn = document.createElement('button');
+    btn.textContent = l;
+    btn.className = 'side-nav-btn';
+    btn.onclick = () => {
+      document.getElementById('section-' + l).scrollIntoView({behavior:'smooth'});
+      if (window.innerWidth <= 768) {
+        document.getElementById('sideNav').classList.remove('visible');
+        document.getElementById('toggleBtn').classList.remove('expanded');
+      }
+    };
+    nav.appendChild(btn);
+  });
+
+  function toggleNav(){
+    const navEl=document.getElementById('sideNav');
+    const main=document.getElementById('mainContent');
+    const btn=document.getElementById('toggleBtn');
+    if(window.innerWidth<=768){navEl.classList.toggle('visible');btn.classList.toggle('expanded');}
+    else{navEl.classList.toggle('hidden');main.classList.toggle('full');btn.classList.toggle('collapsed');}
+  }
+
+  function navigate(theme) {
+    window.parent.postMessage({ type: 'NAVIGATE_THEME', theme }, '*');
+  }
+
+  function setLang(lang) {
+    const fr = lang === 'fr';
+    document.getElementById('navLogo').textContent = fr ? 'Thèmes' : 'Themes';
+    document.getElementById('navLabel').textContent = fr ? 'Lettres' : 'Letters';
+    document.getElementById('title').textContent = fr ? 'Thèmes' : 'Themes';
+    document.getElementById('subtitle').textContent = fr ? 'Choisissez un thème pour commencer' : 'Choose a theme to get started';
+  }
+
+  let langReceived = false;
+  window.addEventListener('message', function(e) {
+    if (e.data && e.data.type === 'LANG') {
+      langReceived = true;
+      setLang(e.data.lang);
+    }
+  });
+
+  let interval = setInterval(() => {
+    if (!langReceived) {
+      window.parent.postMessage('READY', '*');
+    } else {
+      clearInterval(interval);
+    }
+  }, 300);
+</script>
+</body>
+</html>
