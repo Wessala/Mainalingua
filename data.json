@@ -1003,6 +1003,86 @@
       "image": "image/Emociones/Tímida.png"
     }
   ],
+  "Enfermedades": [
+    {
+      "word": "Dolor de cabeza",
+      "image": "image/Enfermedades/Dolor_de_cabeza.png"
+    },
+    {
+      "word": "La anemia",
+      "image": "image/Enfermedades/La_anemia.png"
+    },
+    {
+      "word": "La diarrea",
+      "image": "image/Enfermedades/La_diarrea.png"
+    },
+    {
+      "word": "La fiebre",
+      "image": "image/Enfermedades/La_fiebre.png"
+    },
+    {
+      "word": "La gripe",
+      "image": "image/Enfermedades/La_gripe.png"
+    },
+    {
+      "word": "La otitis",
+      "image": "image/Enfermedades/La_otitis.png"
+    },
+    {
+      "word": "La varicela",
+      "image": "image/Enfermedades/La_varicela.png"
+    },
+    {
+      "word": "Las náuseas",
+      "image": "image/Enfermedades/Las_náuseas.png"
+    },
+    {
+      "word": "Toser",
+      "image": "image/Enfermedades/Toser.png"
+    }
+  ],
+  "Estaciones": [
+    {
+      "word": "El arcoíris",
+      "image": "image/Estaciones/El_arcoíris.png"
+    },
+    {
+      "word": "El invierno",
+      "image": "image/Estaciones/El_invierno.png"
+    },
+    {
+      "word": "El muñeco de nieve",
+      "image": "image/Estaciones/El_muñeco_de_nieve.png"
+    },
+    {
+      "word": "El nevado",
+      "image": "image/Estaciones/El_nevado.png"
+    },
+    {
+      "word": "El otoño",
+      "image": "image/Estaciones/El_otoño.png"
+    },
+    {
+      "word": "El paraguas",
+      "image": "image/Estaciones/El_paraguas.png"
+    },
+    {
+      "word": "El verano",
+      "image": "image/Estaciones/El_verano.png"
+    },
+    {
+      "word": "La primavera",
+      "image": "image/Estaciones/La_primavera.png"
+    },
+    {
+      "word": "Los lentes de sol",
+      "image": "image/Estaciones/Los_lentes_de_sol.png"
+    },
+    {
+      "word": "Los rayos del sol",
+      "image": "image/Estaciones/Los_rayos_del_sol.png"
+    }
+  ],
   "Feliz_cumpleaños": [
     {
       "word": "El pastel de cumpleaños",
