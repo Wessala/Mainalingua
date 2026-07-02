@@ -367,8 +367,8 @@ async function loadTheme() {
     }
     VOCAB = allData[CURRENT_THEME];
     // Mettre à jour le titre
-    document.getElementById('themeTitle').textContent = CURRENT_THEME;
-    document.getElementById('navLogo').textContent = CURRENT_THEME;
+    document.getElementById('themeTitle').textContent = CURRENT_THEME.replace(/_/g, ' ');
+    document.getElementById('navLogo').textContent = CURRENT_THEME.replace(/_/g, ' ');
     // Afficher le contenu
     document.getElementById('loadingScreen').style.display = 'none';
     document.getElementById('gamesContainer').style.display = 'block';
