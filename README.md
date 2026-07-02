@@ -1,119 +1,233 @@
-# Mainalingua — Jeux interactifs de vocabulaire espagnol
+# Mainalingua — Interactive Spanish Vocabulary Games
 
-## 📌 Introduction
+## 📌 Overview
 
-Tout ce qui concerne les jeux interactifs (Vocabulario, Tarjetas didácticas, Memorama, Relaciona la imagen, Escribe la palabra, Sopa de letras, Completa la palabra) est géré ici, sur GitHub — pas directement dans Wix. Wix se contente d'afficher ce contenu via un lien (le composant HTML pointe vers l'URL de ce site).
+This repository contains all the files for the interactive Spanish vocabulary games of the **Mainalingua** online language school. The site is hosted on **GitHub Pages** and embedded in Wix via an HTML component in "Website address" mode.
 
-Concrètement, ce dépôt contient trois éléments :
+### Global Architecture
 
-| Élément | Rôle |
+```
+Wix (page "Activités")
+    └── HtmlComponent "Website address"
+            └── https://wessala.github.io/Mainalingua/themes.html
+                    └── (click on a theme)
+                            └── index.html?theme=ThemeName
+                                    └── fetch data.json
+                                            └── images in image/ThemeName/
+```
+
+### Main Files
+
+| File | Role |
 |---|---|
-| `vocabulario.html` | Le moteur du jeu — le code qui génère l'affichage. **Ne jamais modifier sauf en cas de besoin technique avancé.** |
-| `data.json` | La liste de tous les thèmes, tous les mots, et le chemin de leur image. **C'est le fichier que vous modifierez le plus souvent.** |
-| `images/` | Le dossier contenant toutes les images, organisées dans un sous-dossier par thème. |
+| `themes.html` | Home page — lists all available themes automatically from `data.json` |
+| `index.html` | Game engine — dynamically loads data for the selected theme |
+| `data.json` | Central database — contains all words and image paths per theme |
+| `image/` | Folder containing all images organized in theme subfolders |
+| `.github/workflows/generate_data_json.yml` | Automatic workflow — updates `data.json` on every image upload |
 
-Pour ajouter ou corriger un mot, une image, ou un thème entier, **il ne faut jamais toucher au code** (`vocabulario.html`). Seuls `data.json` et le dossier `images/` doivent être modifiés.
+---
 
-## ⚠️ Règle n°1 — Toujours travailler dans la branche `edit`
+## ⚠️ Rule #1 — Always work in the `edit` branch
 
-La branche `main` doit toujours rester une version stable et fonctionnelle du site. **Ne faites jamais de modification directement sur `main`.**
+**Never make changes directly on the `main` branch.** The `main` branch is the stable, public version of the site.
 
-La branche `edit` a déjà été créée à cet effet. Avant toute modification :
+**Procedure before any modification:**
 
-1. En haut à gauche de la page du dépôt, cliquez sur le menu déroulant qui affiche le nom de la branche actuelle
-2. Sélectionnez **`edit`**
-3. Faites vos modifications uniquement à l'intérieur de cette branche
-4. Une fois certain·e que tout fonctionne (testez l'URL du jeu après modification), ouvrez une **Pull Request** de `edit` vers `main`, puis validez-la (« Merge »)
+1. At the top left of the repository, click on the branch dropdown menu
+2. Select **`edit`**
+3. Make all your changes in `edit`
+4. Test that everything works correctly
+5. Open a **Pull Request** from `edit` to `main` and validate it (Merge)
 
-Cela permet de toujours pouvoir revenir à une version stable de `main` en cas d'erreur dans `edit`.
+---
 
-## ⚠️ Règle n°2 — Respecter exactement l'orthographe et la syntaxe
+## ⚠️ Rule #2 — Strict naming conventions
 
-**Ceci est essentiel : le site ne fonctionnera pas si cette règle n'est pas respectée.**
+**The site will not work if these conventions are not followed.**
 
-Le jeu fonctionne en faisant correspondre trois éléments **caractère pour caractère** :
-1. Le nom du thème écrit dans l'URL (`?theme=NomDuTheme`)
-2. La clé du thème dans `data.json`
-3. Le nom du fichier image dans le dossier `images/`
+The system automatically matches three elements:
 
-Si l'un de ces trois éléments contient une faute de frappe, un espace en trop, une majuscule différente, ou un accent manquant, **le site ne trouvera pas l'image ou le thème, et rien ne s'affichera** (l'utilisateur verra une erreur ou une page vide).
+1. **The theme name** in `data.json`
+2. **The folder name** in `image/`
+3. **The `?theme=` parameter** in the URL
 
-**Règles précises à respecter :**
+These three elements must be **identical character by character**, including uppercase letters and underscores.
 
-- Le nom du thème dans `data.json` doit être identique à celui utilisé dans l'URL, y compris les majuscules (ex : `"Frutas"`, pas `"frutas"`)
-- Le nom de fichier d'une image doit toujours suivre ce format : le mot espagnol, première lettre en majuscule, espaces remplacés par des underscores `_`, sans accents si possible, suivi de `.png` (ex : `El_bombero.png`)
-- Le chemin de l'image dans `data.json` doit correspondre **exactement** à l'emplacement réel du fichier dans `images/` (ex : `images/Oficios/El_bombero.png`)
-- Ne jamais laisser d'espace au début ou à la fin d'un mot ou d'un nom de fichier
-- Toujours vérifier qu'il n'y a pas de virgule manquante ou de guillemet mal fermé dans `data.json` après une modification (un fichier JSON mal formé empêche TOUT le site de fonctionner, pas seulement le thème concerné)
+### Conventions for theme names and folder names
 
-**Avant de valider (commit), relisez toujours votre modification une seconde fois.**
+| ✅ Correct | ❌ Incorrect |
+|---|---|
+| `Animales_de_compañía` | `animales de compañia` |
+| `El_mar` | `El mar` |
+| `Frutas` | `frutas` |
+| `Descripciones_físicas` | `Descripciones fisicas` |
 
-## ➕ Comment ajouter un nouveau thème
+- **Spaces** are replaced by **underscores** `_`
+- The **first letter** is always **uppercase**
+- **Accents** are preserved in folder names and theme names
 
-1. Allez dans le dossier `images/`
-2. Créez un nouveau sous-dossier au nom exact du thème (ex : `images/Oficios/`). Pour cela, créez un nouveau fichier avec le chemin complet, par exemple `images/Oficios/.gitkeep` — GitHub créera automatiquement le dossier
-3. Uploadez toutes les images de ce thème dans ce sous-dossier, en respectant le format de nom de fichier (voir Règle n°2 ci-dessus)
-4. Ouvrez `data.json`, ajoutez une nouvelle entrée avec le nom exact du thème et la liste de ses mots :
-```json
-"Oficios": [
-  {"word": "El bombero", "image": "images/Oficios/El_bombero.png"},
-  {"word": "El doctor", "image": "images/Oficios/El_doctor.png"}
-]
+### Conventions for image file names
+
+| ✅ Correct | ❌ Incorrect |
+|---|---|
+| `La_manzana.png` | `la_manzana.png` |
+| `El_plátano.png` | `El_platano.PNG` |
+| `Frío.png` | `frio.png` |
+| `El_trabajador_de_la_construcción.png` | `El trabajador.png` |
+
+- First letter **uppercase**
+- Spaces replaced by **underscores** `_`
+- **Accents preserved**
+- Extension always in **lowercase** `.png`
+- The article (El/La/Los/Las) is part of the file name when it exists
+- **No suffix** `_Maina` or `_Paco` in the file name
+
+---
+
+## 🤖 Automatic Workflow — Generating `data.json`
+
+A GitHub Actions workflow automatically generates `data.json` every time images are added to the `image/` folder.
+
+**What the workflow does:**
+1. It scans all subfolders in `image/`
+2. For each folder (= one theme), it lists all `.png` files
+3. It generates a JSON entry with the word (file name without `.png`, underscores replaced by spaces) and the image path
+4. It commits and pushes `data.json` automatically
+
+**What the workflow preserves:**
+- Themes whose images are hosted on Wix (URLs containing `wixstatic.com`) — like Frutas — are not overwritten
+
+**The workflow triggers automatically when:**
+- You push files to the `image/` folder
+
+**To run it manually:**
+1. Go to the **Actions** tab of the repository
+2. Click on **"Générer data.json automatiquement"**
+3. Click **"Run workflow"**
+
+---
+
+## ➕ How to add a new theme
+
+1. **Prepare your images** with the correct file names (see conventions above)
+2. **On GitHub**, create a subfolder in `image/` with the exact theme name:
+   - Create a new file with the path `image/ThemeName/.gitkeep` to initialize the folder
+3. **Upload all images** for the theme into that subfolder
+4. **The workflow triggers automatically** and updates `data.json`
+5. **Verify** that the theme appears correctly on `themes.html`
+
+**Example:** to add the theme `Animales_del_mar`:
+- Create `image/Animales_del_mar/.gitkeep`
+- Upload `El_pez.png`, `La_tortuga.png`, etc. into `image/Animales_del_mar/`
+- The workflow automatically generates the entry in `data.json`
+
+---
+
+## ✏️ How to edit an existing word
+
+The word displayed in the game corresponds to the **image file name** (without `.png`, underscores → spaces).
+
+To change a word:
+1. Rename the image file with the correct new name
+2. The old file can be deleted
+3. The workflow updates `data.json` automatically on the next push
+
+---
+
+## 🖼️ How to replace an image
+
+**Option A — Same file name (recommended):**
+1. Upload the new image with **exactly the same file name**
+2. No changes to `data.json` needed
+
+**Option B — New file name:**
+1. Upload the new image with the new name
+2. Delete the old image
+3. The workflow updates `data.json` automatically
+
+---
+
+## 🗑️ How to delete a word or a theme
+
+**Delete a word:**
+1. Delete the corresponding image file in its theme folder
+2. The workflow updates `data.json` automatically
+
+**Delete an entire theme:**
+1. Delete the theme folder in `image/`
+2. The workflow removes the theme from `data.json` automatically
+3. The theme disappears automatically from `themes.html`
+
+---
+
+## 🎨 Images — Generation Rules (OpenAI)
+
+Images are generated using the OpenAI `gpt-image-1` API with Google Colab.
+
+### Gender rules
+| Article | Character |
+|---|---|
+| La / Las | **Maina** (female character) |
+| El / Los | **Paco** (male character) |
+
+### Available poses
+- **Maina** : `Maina1.png`, `Maina2.png`, `Maina4.png` (alternate randomly)
+- **Paco** : `Paco1.png`, `Paco2.png`, `Paco4.png` (alternate randomly)
+- ⚠️ `Maina3.png` and `Paco3.png` do not exist
+
+### Themes with characters (Maina/Paco appear in the image)
+Adjetivos, Emociones, Sentimientos, Oficios, Profesiones, Descripciones físicas, La familia, Rutinas, Saludos, Modales, Me gusta no me gusta
+
+### Themes without characters (Maina/Paco style used as visual reference only)
+All other themes (objects, animals, concepts, food, etc.)
+
+### Plural rule
+- A word ending in `-s` must show **multiple elements** in the image
+- Example: `Las_fresas.png` → multiple strawberries, not just one
+
+---
+
+## 🔗 Important URLs
+
+| Page | URL |
+|---|---|
+| Themes page | `https://wessala.github.io/Mainalingua/themes.html` |
+| Games — Frutas | `https://wessala.github.io/Mainalingua/index.html?theme=Frutas` |
+| Games — Other theme | `https://wessala.github.io/Mainalingua/index.html?theme=ThemeName` |
+| JSON data | `https://wessala.github.io/Mainalingua/data.json` |
+
+### Wix Integration
+The HTML component in Wix is configured in **"Website address"** mode with the URL:
 ```
-5. Vérifiez que la virgule entre chaque thème dans `data.json` est bien présente (sauf après le tout dernier thème du fichier)
-6. Commit vos changements dans la branche `edit` (voir Règle n°1)
-
-## ➕ Comment ajouter un mot à un thème existant
-
-1. Uploadez l'image dans le sous-dossier correspondant de `images/` (ex : `images/Frutas/`), en respectant le format de nom de fichier
-2. Ouvrez `data.json`, trouvez le thème concerné, ajoutez une ligne à l'intérieur de ses crochets `[ ]` :
-```json
-{"word": "El mango", "image": "images/Frutas/El_mango.png"}
+https://wessala.github.io/Mainalingua/themes.html
 ```
-3. Vérifiez la virgule entre cette ligne et la ligne précédente
-4. Commit vos changements
+No changes in Wix are needed to add new themes — everything is managed from GitHub.
 
-## ✏️ Comment modifier l'image d'un mot existant
+---
 
-**Option A — Garder le même nom de fichier (recommandé, le plus simple) :**
-1. Allez dans le sous-dossier du thème concerné dans `images/`
-2. Cliquez sur l'image à remplacer, puis uploadez une nouvelle image avec exactement le même nom de fichier
-3. Aucune modification de `data.json` n'est nécessaire
+## ✅ Checklist before each commit
 
-**Option B — Utiliser un nouveau nom de fichier :**
-1. Uploadez la nouvelle image avec un nouveau nom
-2. Supprimez l'ancienne image (icône poubelle sur la page du fichier)
-3. Mettez à jour le champ `"image"` correspondant dans `data.json` avec le nouveau chemin
+- [ ] I am in the **`edit`** branch, not `main`
+- [ ] The folder name in `image/` follows the naming conventions (uppercase, underscores, accents)
+- [ ] Image file names follow the naming conventions (uppercase, underscores, `.png`)
+- [ ] The GitHub Actions workflow ran successfully (green ✅ icon in the Actions tab)
+- [ ] The theme displays correctly on `themes.html`
+- [ ] Images display correctly in the games
+- [ ] Once validated, the Pull Request from `edit` to `main` has been merged
 
-## ✏️ Comment corriger l'orthographe d'un mot
+---
 
-1. Ouvrez `data.json`
-2. Trouvez le mot concerné dans le thème correspondant
-3. Modifiez uniquement le champ `"word"` (ne touchez pas au champ `"image"` sauf si le nom de fichier doit changer aussi)
-4. Commit vos changements
+## 🎮 Available Games
 
-## 🔗 Format de l'URL pour afficher un thème
+Each theme automatically offers 7 activities:
 
-```
-https://[votre-pseudo].github.io/[nom-du-depot]/vocabulario.html?theme=NomDuTheme
-```
-
-Exemple pour Frutas :
-```
-https://wessala.github.io/Mainalingua/vocabulario.html?theme=Frutas
-```
-
-⚠️ Le texte après `?theme=` doit correspondre **exactement**, majuscules incluses, à la clé utilisée dans `data.json`.
-
-## 🧩 Intégration dans Wix
-
-Dans Wix, le composant HTML (HtmlComponent) de la page concernée est configuré en mode **« Website address »** (et non « Code »), avec l'URL ci-dessus collée directement. Pour changer le thème affiché sur une page Wix, il suffit de modifier le paramètre `?theme=` dans cette URL — aucune modification de code n'est nécessaire dans Wix.
-
-## ✅ Checklist avant chaque commit
-
-- [ ] Le nom du thème est identique partout (URL, `data.json`, dossier `images/`)
-- [ ] Le nom de chaque fichier image suit le format exact (majuscule initiale, underscores, `.png`)
-- [ ] Le chemin `"image"` dans `data.json` correspond exactement à l'emplacement réel du fichier
-- [ ] Toutes les virgules et guillemets de `data.json` sont corrects
-- [ ] Le travail a été fait dans la branche `edit`, pas dans `main`
-- [ ] L'URL du jeu a été testée après modification pour confirmer que tout s'affiche correctement
+| Game | Description |
+|---|---|
+| **Vocabulario** | Hover over images to discover the words |
+| **Tarjetas didácticas** | Flashcards with "I knew it / Review" system |
+| **Memorama** | Memory game — find matching pairs of identical images |
+| **Relaciona la imagen** | Match each image to the correct word (4 pairs at a time) |
+| **Completa la palabra** | Fill in the missing letters of the word |
+| **Sopa de letras** | Word search in a 12×12 grid |
+| **Escribe la palabra** | Write the word matching the image |
