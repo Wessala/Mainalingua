@@ -1020,5 +1020,67 @@
       "word": "Tímida",
       "image": "image/Sentimientos/Tímida.png"
     }
+  ],
+  "Universo_espacial": [
+    {
+      "word": "El asteroide",
+      "image": "image/Universo_espacial/El_asteroide.png"
+    },
+    {
+      "word": "El cohete",
+      "image": "image/Universo_espacial/El_cohete.png"
+    },
+    {
+      "word": "El ovni",
+      "image": "image/Universo_espacial/El_ovni.png"
+    },
+    {
+      "word": "El satélite",
+      "image": "image/Universo_espacial/El_satélite.png"
+    },
+    {
+      "word": "El sol",
+      "image": "image/Universo_espacial/El_sol.png"
+    },
+    {
+      "word": "Júpiter",
+      "image": "image/Universo_espacial/Júpiter.png"
+    },
+    {
+      "word": "La luna",
+      "image": "image/Universo_espacial/La_luna.png"
+    },
+    {
+      "word": "La tierra",
+      "image": "image/Universo_espacial/La_tierra.png"
+    },
+    {
+      "word": "Las estrellas",
+      "image": "image/Universo_espacial/Las_estrellas.png"
+    },
+    {
+      "word": "Marte",
+      "image": "image/Universo_espacial/Marte.png"
+    },
+    {
+      "word": "Mercurio",
+      "image": "image/Universo_espacial/Mercurio.png"
+    },
+    {
+      "word": "Neptuno",
+      "image": "image/Universo_espacial/Neptuno.png"
+    },
+    {
+      "word": "Saturno",
+      "image": "image/Universo_espacial/Saturno.png"
+    },
+    {
+      "word": "Urano",
+      "image": "image/Universo_espacial/Urano.png"
+    },
+    {
+      "word": "Venus",
+      "image": "image/Universo_espacial/Venus.png"
+    }
   ]
 }
