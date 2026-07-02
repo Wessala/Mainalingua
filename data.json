@@ -766,5 +766,55 @@
       "word": "El veterinario",
       "image": "image/Profesiones/El_veterinario.png"
     }
+  ],
+  "Sentimientos": [
+    {
+      "word": "Aburrido",
+      "image": "image/Sentimientos/Aburrido.png"
+    },
+    {
+      "word": "Asustado",
+      "image": "image/Sentimientos/Asustado.png"
+    },
+    {
+      "word": "Celosa",
+      "image": "image/Sentimientos/Celosa.png"
+    },
+    {
+      "word": "Confundido",
+      "image": "image/Sentimientos/Confundido.png"
+    },
+    {
+      "word": "Enamorada",
+      "image": "image/Sentimientos/Enamorada.png"
+    },
+    {
+      "word": "Enojada",
+      "image": "image/Sentimientos/Enojada.png"
+    },
+    {
+      "word": "Feliz Paco",
+      "image": "image/Sentimientos/Feliz_Paco.png"
+    },
+    {
+      "word": "Frustrada",
+      "image": "image/Sentimientos/Frustrada.png"
+    },
+    {
+      "word": "Nerviosa",
+      "image": "image/Sentimientos/Nerviosa.png"
+    },
+    {
+      "word": "Orgullosa",
+      "image": "image/Sentimientos/Orgullosa.png"
+    },
+    {
+      "word": "Triste",
+      "image": "image/Sentimientos/Triste.png"
+    },
+    {
+      "word": "Tímida",
+      "image": "image/Sentimientos/Tímida.png"
+    }
   ]
 }
