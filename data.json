@@ -481,6 +481,64 @@
       "image": "image/El_mar/Las_algas_marinas.png"
     }
   ],
+  "El_vecindario": [
+    {
+      "word": "El apartamento",
+      "image": "image/El_vecindario/El_apartamento.png"
+    },
+    {
+      "word": "El banco",
+      "image": "image/El_vecindario/El_banco.png"
+    },
+    {
+      "word": "El hospital",
+      "image": "image/El_vecindario/El_hospital.png"
+    },
+    {
+      "word": "El parque",
+      "image": "image/El_vecindario/El_parque.png"
+    },
+    {
+      "word": "El restaurante",
+      "image": "image/El_vecindario/El_restaurante.png"
+    },
+    {
+      "word": "La casa",
+      "image": "image/El_vecindario/La_casa.png"
+    },
+    {
+      "word": "La escuela",
+      "image": "image/El_vecindario/La_escuela.png"
+    },
+    {
+      "word": "La estación de bomberos",
+      "image": "image/El_vecindario/La_estación_de_bomberos.png"
+    },
+    {
+      "word": "La oficina",
+      "image": "image/El_vecindario/La_oficina.png"
+    },
+    {
+      "word": "La oficina de correos",
+      "image": "image/El_vecindario/La_oficina_de_correos.png"
+    },
+    {
+      "word": "La panaderia",
+      "image": "image/El_vecindario/La_panaderia.png"
+    },
+    {
+      "word": "La panadería",
+      "image": "image/El_vecindario/La_panadería.png"
+    },
+    {
+      "word": "La parada de autobus",
+      "image": "image/El_vecindario/La_parada_de_autobus.png"
+    },
+    {
+      "word": "La tienda de comestibles",
+      "image": "image/El_vecindario/La_tienda_de_comestibles.png"
+    }
+  ],
   "Emociones": [
     {
       "word": "Aburrido",
@@ -633,6 +691,72 @@
     {
       "word": "El melón",
       "image": "https://static.wixstatic.com/media/8d0b81_d718ef9ef64b42c68e47eb1ee2345343~mv2.png"
+    }
+  ],
+  "Noche_de_brujas": [
+    {
+      "word": "El ataúd",
+      "image": "image/Noche_de_brujas/El_ataúd.png"
+    },
+    {
+      "word": "El cementerio",
+      "image": "image/Noche_de_brujas/El_cementerio.png"
+    },
+    {
+      "word": "El esqueleto",
+      "image": "image/Noche_de_brujas/El_esqueleto.png"
+    },
+    {
+      "word": "El fantasma",
+      "image": "image/Noche_de_brujas/El_fantasma.png"
+    },
+    {
+      "word": "El gato negro",
+      "image": "image/Noche_de_brujas/El_gato_negro.png"
+    },
+    {
+      "word": "El monstruo",
+      "image": "image/Noche_de_brujas/El_monstruo.png"
+    },
+    {
+      "word": "El murciélago",
+      "image": "image/Noche_de_brujas/El_murciélago.png"
+    },
+    {
+      "word": "El vampiro",
+      "image": "image/Noche_de_brujas/El_vampiro.png"
+    },
+    {
+      "word": "El zombi",
+      "image": "image/Noche_de_brujas/El_zombi.png"
+    },
+    {
+      "word": "La araña",
+      "image": "image/Noche_de_brujas/La_araña.png"
+    },
+    {
+      "word": "La bruja",
+      "image": "image/Noche_de_brujas/La_bruja.png"
+    },
+    {
+      "word": "La casa embrujada",
+      "image": "image/Noche_de_brujas/La_casa_embrujada.png"
+    },
+    {
+      "word": "La linterna de calabaza",
+      "image": "image/Noche_de_brujas/La_linterna_de_calabaza.png"
+    },
+    {
+      "word": "La momia",
+      "image": "image/Noche_de_brujas/La_momia.png"
+    },
+    {
+      "word": "La telaraña",
+      "image": "image/Noche_de_brujas/La_telaraña.png"
+    },
+    {
+      "word": "Los dulces",
+      "image": "image/Noche_de_brujas/Los_dulces.png"
     }
   ],
   "Oficios": [
