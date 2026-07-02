@@ -531,6 +531,32 @@
       "image": "image/Emociones/Triste.png"
     }
   ],
+  "Feliz_cumpleaños": [
+    {
+      "word": "El pastel de cumpleaños",
+      "image": "image/Feliz_cumpleaños/El_pastel_de_cumpleaños.png"
+    },
+    {
+      "word": "La piñata",
+      "image": "image/Feliz_cumpleaños/La_piñata.png"
+    },
+    {
+      "word": "La tarjeta de cumpleaños",
+      "image": "image/Feliz_cumpleaños/La_tarjeta_de_cumpleaños.png"
+    },
+    {
+      "word": "Los globos",
+      "image": "image/Feliz_cumpleaños/Los_globos.png"
+    },
+    {
+      "word": "Los gorros de fiesta",
+      "image": "image/Feliz_cumpleaños/Los_gorros_de_fiesta.png"
+    },
+    {
+      "word": "Los regalos",
+      "image": "image/Feliz_cumpleaños/Los_regalos.png"
+    }
+  ],
   "Frutas": [
     {
       "word": "La manzana",
