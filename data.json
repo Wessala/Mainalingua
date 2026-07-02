@@ -539,6 +539,92 @@
       "image": "image/El_vecindario/La_tienda_de_comestibles.png"
     }
   ],
+  "Emociones": [
+    {
+      "word": "Agradecidoo",
+      "image": "image/Emociones/Agradecidoo.png"
+    },
+    {
+      "word": "Alegría",
+      "image": "image/Emociones/Alegría.png"
+    },
+    {
+      "word": "Amor",
+      "image": "image/Emociones/Amor.png"
+    },
+    {
+      "word": "Asustadoo",
+      "image": "image/Emociones/Asustadoo.png"
+    },
+    {
+      "word": "Avergonzada",
+      "image": "image/Emociones/Avergonzada.png"
+    },
+    {
+      "word": "Calmada",
+      "image": "image/Emociones/Calmada.png"
+    },
+    {
+      "word": "Cansada",
+      "image": "image/Emociones/Cansada.png"
+    },
+    {
+      "word": "Celos",
+      "image": "image/Emociones/Celos.png"
+    },
+    {
+      "word": "Culpa",
+      "image": "image/Emociones/Culpa.png"
+    },
+    {
+      "word": "Curiosa",
+      "image": "image/Emociones/Curiosa.png"
+    },
+    {
+      "word": "Enojadoo",
+      "image": "image/Emociones/Enojadoo.png"
+    },
+    {
+      "word": "Entusiasmo",
+      "image": "image/Emociones/Entusiasmo.png"
+    },
+    {
+      "word": "Felicidad",
+      "image": "image/Emociones/Felicidad.png"
+    },
+    {
+      "word": "Frustrada",
+      "image": "image/Emociones/Frustrada.png"
+    },
+    {
+      "word": "Miedo",
+      "image": "image/Emociones/Miedo.png"
+    },
+    {
+      "word": "Orgullosoo",
+      "image": "image/Emociones/Orgullosoo.png"
+    },
+    {
+      "word": "Preocupadoo",
+      "image": "image/Emociones/Preocupadoo.png"
+    },
+    {
+      "word": "Sorpresa",
+      "image": "image/Emociones/Sorpresa.png"
+    },
+    {
+      "word": "Tranquila",
+      "image": "image/Emociones/Tranquila.png"
+    },
+    {
+      "word": "Triste",
+      "image": "image/Emociones/Triste.png"
+    },
+    {
+      "word": "Tímida",
+      "image": "image/Emociones/Tímida.png"
+    }
+  ],
   "Feliz_cumpleaños": [
     {
       "word": "El pastel de cumpleaños",
@@ -1031,56 +1117,6 @@
     {
       "word": "Venus",
       "image": "image/Universo_espacial/Venus.png"
-    }
-  ],
-  "Emociones": [
-    {
-      "word": "Aburrido",
-      "image": "image/Emociones/Aburrido.png"
-    },
-    {
-      "word": "Asustado",
-      "image": "image/Emociones/Asustado.png"
-    },
-    {
-      "word": "Avergonzado",
-      "image": "image/Emociones/Avergonzado.png"
-    },
-    {
-      "word": "Cansado",
-      "image": "image/Emociones/Cansado.png"
-    },
-    {
-      "word": "Confundido",
-      "image": "image/Emociones/Confundido.png"
-    },
-    {
-      "word": "Emocionado",
-      "image": "image/Emociones/Emocionado.png"
-    },
-    {
-      "word": "Enojado",
-      "image": "image/Emociones/Enojado.png"
-    },
-    {
-      "word": "Feliz",
-      "image": "image/Emociones/Feliz.png"
-    },
-    {
-      "word": "Nervioso",
-      "image": "image/Emociones/Nervioso.png"
-    },
-    {
-      "word": "Sorprendido",
-      "image": "image/Emociones/Sorprendido.png"
-    },
-    {
-      "word": "Tranquilo",
-      "image": "image/Emociones/Tranquilo.png"
-    },
-    {
-      "word": "Triste",
-      "image": "image/Emociones/Triste.png"
     }
   ]
 }
