@@ -539,56 +539,6 @@
       "image": "image/El_vecindario/La_tienda_de_comestibles.png"
     }
   ],
-  "Emociones": [
-    {
-      "word": "Aburrido",
-      "image": "image/Emociones/Aburrido.png"
-    },
-    {
-      "word": "Asustado",
-      "image": "image/Emociones/Asustado.png"
-    },
-    {
-      "word": "Avergonzado",
-      "image": "image/Emociones/Avergonzado.png"
-    },
-    {
-      "word": "Cansado",
-      "image": "image/Emociones/Cansado.png"
-    },
-    {
-      "word": "Confundido",
-      "image": "image/Emociones/Confundido.png"
-    },
-    {
-      "word": "Emocionado",
-      "image": "image/Emociones/Emocionado.png"
-    },
-    {
-      "word": "Enojado",
-      "image": "image/Emociones/Enojado.png"
-    },
-    {
-      "word": "Feliz",
-      "image": "image/Emociones/Feliz.png"
-    },
-    {
-      "word": "Nervioso",
-      "image": "image/Emociones/Nervioso.png"
-    },
-    {
-      "word": "Sorprendido",
-      "image": "image/Emociones/Sorprendido.png"
-    },
-    {
-      "word": "Tranquilo",
-      "image": "image/Emociones/Tranquilo.png"
-    },
-    {
-      "word": "Triste",
-      "image": "image/Emociones/Triste.png"
-    }
-  ],
   "Feliz_cumpleaños": [
     {
       "word": "El pastel de cumpleaños",
@@ -1081,6 +1031,56 @@
     {
       "word": "Venus",
       "image": "image/Universo_espacial/Venus.png"
+    }
+  ],
+  "Emociones": [
+    {
+      "word": "Aburrido",
+      "image": "image/Emociones/Aburrido.png"
+    },
+    {
+      "word": "Asustado",
+      "image": "image/Emociones/Asustado.png"
+    },
+    {
+      "word": "Avergonzado",
+      "image": "image/Emociones/Avergonzado.png"
+    },
+    {
+      "word": "Cansado",
+      "image": "image/Emociones/Cansado.png"
+    },
+    {
+      "word": "Confundido",
+      "image": "image/Emociones/Confundido.png"
+    },
+    {
+      "word": "Emocionado",
+      "image": "image/Emociones/Emocionado.png"
+    },
+    {
+      "word": "Enojado",
+      "image": "image/Emociones/Enojado.png"
+    },
+    {
+      "word": "Feliz",
+      "image": "image/Emociones/Feliz.png"
+    },
+    {
+      "word": "Nervioso",
+      "image": "image/Emociones/Nervioso.png"
+    },
+    {
+      "word": "Sorprendido",
+      "image": "image/Emociones/Sorprendido.png"
+    },
+    {
+      "word": "Tranquilo",
+      "image": "image/Emociones/Tranquilo.png"
+    },
+    {
+      "word": "Triste",
+      "image": "image/Emociones/Triste.png"
     }
   ]
 }
