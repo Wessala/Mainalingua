@@ -847,6 +847,68 @@
       "image": "image/Otoño/Las_manzanas.png"
     }
   ],
+  "Paisajes": [
+    {
+      "word": "El bosque",
+      "image": "image/Paisajes/El_bosque.png"
+    },
+    {
+      "word": "El campo",
+      "image": "image/Paisajes/El_campo.png"
+    },
+    {
+      "word": "El desierto",
+      "image": "image/Paisajes/El_desierto.png"
+    },
+    {
+      "word": "El lago",
+      "image": "image/Paisajes/El_lago.png"
+    },
+    {
+      "word": "El oasis",
+      "image": "image/Paisajes/El_oasis.png"
+    },
+    {
+      "word": "El oceano",
+      "image": "image/Paisajes/El_oceano.png"
+    },
+    {
+      "word": "El volcán",
+      "image": "image/Paisajes/El_volcán.png"
+    },
+    {
+      "word": "El ártico",
+      "image": "image/Paisajes/El_ártico.png"
+    },
+    {
+      "word": "La ciudad",
+      "image": "image/Paisajes/La_ciudad.png"
+    },
+    {
+      "word": "La cueva",
+      "image": "image/Paisajes/La_cueva.png"
+    },
+    {
+      "word": "La isla",
+      "image": "image/Paisajes/La_isla.png"
+    },
+    {
+      "word": "La playa",
+      "image": "image/Paisajes/La_playa.png"
+    },
+    {
+      "word": "La selva",
+      "image": "image/Paisajes/La_selva.png"
+    },
+    {
+      "word": "Las colinas",
+      "image": "image/Paisajes/Las_colinas.png"
+    },
+    {
+      "word": "Las montanas",
+      "image": "image/Paisajes/Las_montanas.png"
+    }
+  ],
   "Profesiones": [
     {
       "word": "El arquitecto",
