@@ -389,6 +389,56 @@
       "image": "image/Bebidas/Refrescos.png"
     }
   ],
+  "Cantidades": [
+    {
+      "word": "Abundante",
+      "image": "image/Cantidades/Abundante.png"
+    },
+    {
+      "word": "Bastante",
+      "image": "image/Cantidades/Bastante.png"
+    },
+    {
+      "word": "Demasiado",
+      "image": "image/Cantidades/Demasiado.png"
+    },
+    {
+      "word": "Escaso",
+      "image": "image/Cantidades/Escaso.png"
+    },
+    {
+      "word": "Insuficiente",
+      "image": "image/Cantidades/Insuficiente.png"
+    },
+    {
+      "word": "Menos",
+      "image": "image/Cantidades/Menos.png"
+    },
+    {
+      "word": "Mucho",
+      "image": "image/Cantidades/Mucho.png"
+    },
+    {
+      "word": "Más",
+      "image": "image/Cantidades/Más.png"
+    },
+    {
+      "word": "Nada",
+      "image": "image/Cantidades/Nada.png"
+    },
+    {
+      "word": "Poco",
+      "image": "image/Cantidades/Poco.png"
+    },
+    {
+      "word": "Suficiente",
+      "image": "image/Cantidades/Suficiente.png"
+    },
+    {
+      "word": "Varios",
+      "image": "image/Cantidades/Varios.png"
+    }
+  ],
   "Colores": [
     {
       "word": "El amarillo",
@@ -529,6 +579,56 @@
     {
       "word": "África",
       "image": "image/Continentes_océanos/África.png"
+    }
+  ],
+  "Desayuno": [
+    {
+      "word": "El cruasán",
+      "image": "image/Desayuno/El_cruasán.png"
+    },
+    {
+      "word": "El jugo",
+      "image": "image/Desayuno/El_jugo.png"
+    },
+    {
+      "word": "El pan tostado",
+      "image": "image/Desayuno/El_pan_tostado.png"
+    },
+    {
+      "word": "El queso",
+      "image": "image/Desayuno/El_queso.png"
+    },
+    {
+      "word": "El yogur",
+      "image": "image/Desayuno/El_yogur.png"
+    },
+    {
+      "word": "La avena",
+      "image": "image/Desayuno/La_avena.png"
+    },
+    {
+      "word": "La leche",
+      "image": "image/Desayuno/La_leche.png"
+    },
+    {
+      "word": "La mantequilla",
+      "image": "image/Desayuno/La_mantequilla.png"
+    },
+    {
+      "word": "La mermelada",
+      "image": "image/Desayuno/La_mermelada.png"
+    },
+    {
+      "word": "Los cereales",
+      "image": "image/Desayuno/Los_cereales.png"
+    },
+    {
+      "word": "Los gofres",
+      "image": "image/Desayuno/Los_gofres.png"
+    },
+    {
+      "word": "Los huevos",
+      "image": "image/Desayuno/Los_huevos.png"
     }
   ],
   "Descripciones_físicas": [
@@ -955,6 +1055,52 @@
     {
       "word": "El melón",
       "image": "https://static.wixstatic.com/media/8d0b81_d718ef9ef64b42c68e47eb1ee2345343~mv2.png"
+    }
+  ],
+  "Habitaciones_de_la_casa": [
+    {
+      "word": "El balcón",
+      "image": "image/Habitaciones_de_la_casa/El_balcón.png"
+    },
+    {
+      "word": "El baño",
+      "image": "image/Habitaciones_de_la_casa/El_baño.png"
+    },
+    {
+      "word": "El comedor",
+      "image": "image/Habitaciones_de_la_casa/El_comedor.png"
+    },
+    {
+      "word": "El dormitorio",
+      "image": "image/Habitaciones_de_la_casa/El_dormitorio.png"
+    },
+    {
+      "word": "El garaje",
+      "image": "image/Habitaciones_de_la_casa/El_garaje.png"
+    },
+    {
+      "word": "El jardín",
+      "image": "image/Habitaciones_de_la_casa/El_jardín.png"
+    },
+    {
+      "word": "El pasillo",
+      "image": "image/Habitaciones_de_la_casa/El_pasillo.png"
+    },
+    {
+      "word": "La cocina",
+      "image": "image/Habitaciones_de_la_casa/La_cocina.png"
+    },
+    {
+      "word": "La lavandería",
+      "image": "image/Habitaciones_de_la_casa/La_lavandería.png"
+    },
+    {
+      "word": "La sala de estar",
+      "image": "image/Habitaciones_de_la_casa/La_sala_de_estar.png"
+    },
+    {
+      "word": "La terraza",
+      "image": "image/Habitaciones_de_la_casa/La_terraza.png"
     }
   ],
   "Hogar": [
