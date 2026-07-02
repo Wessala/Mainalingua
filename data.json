@@ -689,6 +689,84 @@
       "image": "image/El_vecindario/La_tienda_de_comestibles.png"
     }
   ],
+  "Electrodomésticos": [
+    {
+      "word": "El aire acondicionado",
+      "image": "image/Electrodomésticos/El_aire_acondicionado.png"
+    },
+    {
+      "word": "El congelador",
+      "image": "image/Electrodomésticos/El_congelador.png"
+    },
+    {
+      "word": "El horno",
+      "image": "image/Electrodomésticos/El_horno.png"
+    },
+    {
+      "word": "El lavavajillas",
+      "image": "image/Electrodomésticos/El_lavavajillas.png"
+    },
+    {
+      "word": "El microondas",
+      "image": "image/Electrodomésticos/El_microondas.png"
+    },
+    {
+      "word": "El refrigerador",
+      "image": "image/Electrodomésticos/El_refrigerador.png"
+    },
+    {
+      "word": "El ventilador",
+      "image": "image/Electrodomésticos/El_ventilador.png"
+    },
+    {
+      "word": "La aspiradora",
+      "image": "image/Electrodomésticos/La_aspiradora.png"
+    },
+    {
+      "word": "La batidora",
+      "image": "image/Electrodomésticos/La_batidora.png"
+    },
+    {
+      "word": "La cafetera",
+      "image": "image/Electrodomésticos/La_cafetera.png"
+    },
+    {
+      "word": "La estufa",
+      "image": "image/Electrodomésticos/La_estufa.png"
+    },
+    {
+      "word": "La lavadora",
+      "image": "image/Electrodomésticos/La_lavadora.png"
+    },
+    {
+      "word": "La licuadora",
+      "image": "image/Electrodomésticos/La_licuadora.png"
+    },
+    {
+      "word": "La parrilla",
+      "image": "image/Electrodomésticos/La_parrilla.png"
+    },
+    {
+      "word": "La plancha",
+      "image": "image/Electrodomésticos/La_plancha.png"
+    },
+    {
+      "word": "La radio",
+      "image": "image/Electrodomésticos/La_radio.png"
+    },
+    {
+      "word": "La televisión",
+      "image": "image/Electrodomésticos/La_televisión.png"
+    },
+    {
+      "word": "La tetera",
+      "image": "image/Electrodomésticos/La_tetera.png"
+    },
+    {
+      "word": "La tostadora",
+      "image": "image/Electrodomésticos/La_tostadora.png"
+    }
+  ],
   "Emociones": [
     {
       "word": "Agradecidoo",
