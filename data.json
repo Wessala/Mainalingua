@@ -957,6 +957,72 @@
       "image": "https://static.wixstatic.com/media/8d0b81_d718ef9ef64b42c68e47eb1ee2345343~mv2.png"
     }
   ],
+  "Hogar": [
+    {
+      "word": "El baño",
+      "image": "image/Hogar/El_baño.png"
+    },
+    {
+      "word": "El cuarto de juego",
+      "image": "image/Hogar/El_cuarto_de_juego.png"
+    },
+    {
+      "word": "El dormitorio",
+      "image": "image/Hogar/El_dormitorio.png"
+    },
+    {
+      "word": "El piso",
+      "image": "image/Hogar/El_piso.png"
+    },
+    {
+      "word": "El salón",
+      "image": "image/Hogar/El_salón.png"
+    },
+    {
+      "word": "El sótano",
+      "image": "image/Hogar/El_sótano.png"
+    },
+    {
+      "word": "El techo",
+      "image": "image/Hogar/El_techo.png"
+    },
+    {
+      "word": "El ático",
+      "image": "image/Hogar/El_ático.png"
+    },
+    {
+      "word": "La chimenea",
+      "image": "image/Hogar/La_chimenea.png"
+    },
+    {
+      "word": "La cocina",
+      "image": "image/Hogar/La_cocina.png"
+    },
+    {
+      "word": "La habitación",
+      "image": "image/Hogar/La_habitación.png"
+    },
+    {
+      "word": "La lavandería",
+      "image": "image/Hogar/La_lavandería.png"
+    },
+    {
+      "word": "La puerta",
+      "image": "image/Hogar/La_puerta.png"
+    },
+    {
+      "word": "La ventana",
+      "image": "image/Hogar/La_ventana.png"
+    },
+    {
+      "word": "Las escaleras",
+      "image": "image/Hogar/Las_escaleras.png"
+    },
+    {
+      "word": "Las paredes",
+      "image": "image/Hogar/Las_paredes.png"
+    }
+  ],
   "Noche_de_brujas": [
     {
       "word": "El ataúd",
