@@ -395,12 +395,8 @@
       "image": "image/Descripciones_físicas/Calvo.png"
     },
     {
-      "word": "Corto",
-      "image": "image/Descripciones_físicas/Corto.png"
-    },
-    {
-      "word": "Delgado",
-      "image": "image/Descripciones_físicas/Delgado.png"
+      "word": "Delgada",
+      "image": "image/Descripciones_físicas/Delgada.png"
     },
     {
       "word": "Flaco",
@@ -419,16 +415,12 @@
       "image": "image/Descripciones_físicas/Joven.png"
     },
     {
-      "word": "Largo",
-      "image": "image/Descripciones_físicas/Largo.png"
+      "word": "Musculosa",
+      "image": "image/Descripciones_físicas/Musculosa.png"
     },
     {
-      "word": "Musculoso",
-      "image": "image/Descripciones_físicas/Musculoso.png"
-    },
-    {
-      "word": "Pequeno",
-      "image": "image/Descripciones_físicas/Pequeno.png"
+      "word": "Pequeña",
+      "image": "image/Descripciones_físicas/Pequeña.png"
     },
     {
       "word": "Viejo",
