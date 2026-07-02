@@ -339,6 +339,56 @@
       "image": "image/Animales_del_bosque/La_mariquita.png"
     }
   ],
+  "Bebidas": [
+    {
+      "word": "Agua con gas",
+      "image": "image/Bebidas/Agua_con_gas.png"
+    },
+    {
+      "word": "Chocolate caliente",
+      "image": "image/Bebidas/Chocolate_caliente.png"
+    },
+    {
+      "word": "El agua",
+      "image": "image/Bebidas/El_agua.png"
+    },
+    {
+      "word": "El café",
+      "image": "image/Bebidas/El_café.png"
+    },
+    {
+      "word": "El jugo",
+      "image": "image/Bebidas/El_jugo.png"
+    },
+    {
+      "word": "El té",
+      "image": "image/Bebidas/El_té.png"
+    },
+    {
+      "word": "El vino",
+      "image": "image/Bebidas/El_vino.png"
+    },
+    {
+      "word": "La cerveza",
+      "image": "image/Bebidas/La_cerveza.png"
+    },
+    {
+      "word": "La infusión",
+      "image": "image/Bebidas/La_infusión.png"
+    },
+    {
+      "word": "La leche",
+      "image": "image/Bebidas/La_leche.png"
+    },
+    {
+      "word": "La malteada",
+      "image": "image/Bebidas/La_malteada.png"
+    },
+    {
+      "word": "Refrescos",
+      "image": "image/Bebidas/Refrescos.png"
+    }
+  ],
   "Continentes_océanos": [
     {
       "word": "Antártida",
