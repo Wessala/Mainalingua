@@ -389,6 +389,56 @@
       "image": "image/Bebidas/Refrescos.png"
     }
   ],
+  "Colores": [
+    {
+      "word": "El amarillo",
+      "image": "image/Colores/El_amarillo.png"
+    },
+    {
+      "word": "El azul",
+      "image": "image/Colores/El_azul.png"
+    },
+    {
+      "word": "El beige",
+      "image": "image/Colores/El_beige.png"
+    },
+    {
+      "word": "El blanco",
+      "image": "image/Colores/El_blanco.png"
+    },
+    {
+      "word": "El café",
+      "image": "image/Colores/El_café.png"
+    },
+    {
+      "word": "El gris",
+      "image": "image/Colores/El_gris.png"
+    },
+    {
+      "word": "El morado",
+      "image": "image/Colores/El_morado.png"
+    },
+    {
+      "word": "El naranja",
+      "image": "image/Colores/El_naranja.png"
+    },
+    {
+      "word": "El negro",
+      "image": "image/Colores/El_negro.png"
+    },
+    {
+      "word": "El rojo",
+      "image": "image/Colores/El_rojo.png"
+    },
+    {
+      "word": "El rosa",
+      "image": "image/Colores/El_rosa.png"
+    },
+    {
+      "word": "El verde",
+      "image": "image/Colores/El_verde.png"
+    }
+  ],
   "Continentes_océanos": [
     {
       "word": "Antártida",
