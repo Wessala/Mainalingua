@@ -439,6 +439,56 @@
       "image": "image/Cantidades/Varios.png"
     }
   ],
+  "Clima": [
+    {
+      "word": "Arcoíris",
+      "image": "image/Clima/Arcoíris.png"
+    },
+    {
+      "word": "Calor",
+      "image": "image/Clima/Calor.png"
+    },
+    {
+      "word": "Despejado",
+      "image": "image/Clima/Despejado.png"
+    },
+    {
+      "word": "Frío",
+      "image": "image/Clima/Frío.png"
+    },
+    {
+      "word": "Granizo",
+      "image": "image/Clima/Granizo.png"
+    },
+    {
+      "word": "Húmedo",
+      "image": "image/Clima/Húmedo.png"
+    },
+    {
+      "word": "Lluvioso",
+      "image": "image/Clima/Lluvioso.png"
+    },
+    {
+      "word": "Nevando",
+      "image": "image/Clima/Nevando.png"
+    },
+    {
+      "word": "Niebla",
+      "image": "image/Clima/Niebla.png"
+    },
+    {
+      "word": "Nublado",
+      "image": "image/Clima/Nublado.png"
+    },
+    {
+      "word": "Soleado",
+      "image": "image/Clima/Soleado.png"
+    },
+    {
+      "word": "Ventoso",
+      "image": "image/Clima/Ventoso.png"
+    }
+  ],
   "Colores": [
     {
       "word": "El amarillo",
@@ -1167,6 +1217,56 @@
     {
       "word": "Las paredes",
       "image": "image/Hogar/Las_paredes.png"
+    }
+  ],
+  "Invierno": [
+    {
+      "word": "El abrigo de invierno",
+      "image": "image/Invierno/El_abrigo_de_invierno.png"
+    },
+    {
+      "word": "El copo de nieve",
+      "image": "image/Invierno/El_copo_de_nieve.png"
+    },
+    {
+      "word": "El muñeco de nieve",
+      "image": "image/Invierno/El_muñeco_de_nieve.png"
+    },
+    {
+      "word": "El trineo",
+      "image": "image/Invierno/El_trineo.png"
+    },
+    {
+      "word": "El ángel de nieve",
+      "image": "image/Invierno/El_ángel_de_nieve.png"
+    },
+    {
+      "word": "La chimenea",
+      "image": "image/Invierno/La_chimenea.png"
+    },
+    {
+      "word": "La pala de nieve",
+      "image": "image/Invierno/La_pala_de_nieve.png"
+    },
+    {
+      "word": "Las bolas de nieve",
+      "image": "image/Invierno/Las_bolas_de_nieve.png"
+    },
+    {
+      "word": "Las botas de nieve",
+      "image": "image/Invierno/Las_botas_de_nieve.png"
+    },
+    {
+      "word": "Los guantes",
+      "image": "image/Invierno/Los_guantes.png"
+    },
+    {
+      "word": "Los pantalones de nieve",
+      "image": "image/Invierno/Los_pantalones_de_nieve.png"
+    },
+    {
+      "word": "Los patines",
+      "image": "image/Invierno/Los_patines.png"
     }
   ],
   "Noche_de_brujas": [
