@@ -541,52 +541,64 @@
   ],
   "Colores_2": [
     {
-      "word": "El amarillo",
-      "image": "image/Colores_2/El_amarillo.png"
+      "word": "El azul cielo",
+      "image": "image/Colores_2/El_azul_cielo.png"
     },
     {
-      "word": "El azul",
-      "image": "image/Colores_2/El_azul.png"
+      "word": "El azul royal",
+      "image": "image/Colores_2/El_azul_royal.png"
     },
     {
-      "word": "El beige",
-      "image": "image/Colores_2/El_beige.png"
+      "word": "El borgoña",
+      "image": "image/Colores_2/El_borgoña.png"
     },
     {
-      "word": "El blanco",
-      "image": "image/Colores_2/El_blanco.png"
+      "word": "El color carmesí",
+      "image": "image/Colores_2/El_color_carmesí.png"
     },
     {
-      "word": "El café",
-      "image": "image/Colores_2/El_café.png"
+      "word": "El color durazno",
+      "image": "image/Colores_2/El_color_durazno.png"
     },
     {
-      "word": "El gris",
-      "image": "image/Colores_2/El_gris.png"
+      "word": "El coral",
+      "image": "image/Colores_2/El_coral.png"
     },
     {
-      "word": "El morado",
-      "image": "image/Colores_2/El_morado.png"
+      "word": "El fucsia",
+      "image": "image/Colores_2/El_fucsia.png"
     },
     {
-      "word": "El naranja",
-      "image": "image/Colores_2/El_naranja.png"
+      "word": "El lavanda",
+      "image": "image/Colores_2/El_lavanda.png"
     },
     {
-      "word": "El negro",
-      "image": "image/Colores_2/El_negro.png"
+      "word": "El lima",
+      "image": "image/Colores_2/El_lima.png"
     },
     {
-      "word": "El rojo",
-      "image": "image/Colores_2/El_rojo.png"
+      "word": "El marfil",
+      "image": "image/Colores_2/El_marfil.png"
     },
     {
-      "word": "El rosa",
-      "image": "image/Colores_2/El_rosa.png"
+      "word": "El turquesa",
+      "image": "image/Colores_2/El_turquesa.png"
     },
     {
-      "word": "El verde",
-      "image": "image/Colores_2/El_verde.png"
+      "word": "El verde azulado",
+      "image": "image/Colores_2/El_verde_azulado.png"
+    },
+    {
+      "word": "El verde esmeralda",
+      "image": "image/Colores_2/El_verde_esmeralda.png"
+    },
+    {
+      "word": "El verde limón",
+      "image": "image/Colores_2/El_verde_limón.png"
+    },
+    {
+      "word": "El índigo",
+      "image": "image/Colores_2/El_índigo.png"
     }
   ],
   "Continentes_océanos": [
@@ -727,6 +739,60 @@
       "image": "image/Descripciones_físicas/Viejo.png"
     }
   ],
+  "Días_de_la_semana": [
+    {
+      "word": "Ayer",
+      "image": "image/Días_de_la_semana/Ayer.png"
+    },
+    {
+      "word": "Domingo",
+      "image": "image/Días_de_la_semana/Domingo.png"
+    },
+    {
+      "word": "El calendario",
+      "image": "image/Días_de_la_semana/El_calendario.png"
+    },
+    {
+      "word": "El fin de semana",
+      "image": "image/Días_de_la_semana/El_fin_de_semana.png"
+    },
+    {
+      "word": "Hoy",
+      "image": "image/Días_de_la_semana/Hoy.png"
+    },
+    {
+      "word": "Jueves",
+      "image": "image/Días_de_la_semana/Jueves.png"
+    },
+    {
+      "word": "La próxima semana",
+      "image": "image/Días_de_la_semana/La_próxima_semana.png"
+    },
+    {
+      "word": "Lunes",
+      "image": "image/Días_de_la_semana/Lunes.png"
+    },
+    {
+      "word": "Martes",
+      "image": "image/Días_de_la_semana/Martes.png"
+    },
+    {
+      "word": "Mañana",
+      "image": "image/Días_de_la_semana/Mañana.png"
+    },
+    {
+      "word": "Miércoles",
+      "image": "image/Días_de_la_semana/Miércoles.png"
+    },
+    {
+      "word": "Sábado",
+      "image": "image/Días_de_la_semana/Sábado.png"
+    },
+    {
+      "word": "Viernes",
+      "image": "image/Días_de_la_semana/Viernes.png"
+    }
+  ],
   "El_mar": [
     {
       "word": "El buzo",
@@ -823,10 +889,6 @@
       "image": "image/El_vecindario/La_oficina_de_correos.png"
     },
     {
-      "word": "La panaderia",
-      "image": "image/El_vecindario/La_panaderia.png"
-    },
-    {
       "word": "La panadería",
       "image": "image/El_vecindario/La_panadería.png"
     },
@@ -919,8 +981,8 @@
   ],
   "Emociones": [
     {
-      "word": "Agradecidoo",
-      "image": "image/Emociones/Agradecidoo.png"
+      "word": "Agradecido",
+      "image": "image/Emociones/Agradecido.png"
     },
     {
       "word": "Alegría",
@@ -931,8 +993,8 @@
       "image": "image/Emociones/Amor.png"
     },
     {
-      "word": "Asustadoo",
-      "image": "image/Emociones/Asustadoo.png"
+      "word": "Asustado",
+      "image": "image/Emociones/Asustado.png"
     },
     {
       "word": "Avergonzada",
