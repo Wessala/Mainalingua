@@ -1607,10 +1607,6 @@
       "image": "image/Profesiones/El_ingeniero.png"
     },
     {
-      "word": "El música",
-      "image": "image/Profesiones/El_música.png"
-    },
-    {
       "word": "El periodista",
       "image": "image/Profesiones/El_periodista.png"
     },
@@ -1625,6 +1621,10 @@
     {
       "word": "El veterinario",
       "image": "image/Profesiones/El_veterinario.png"
+    },
+    {
+      "word": "La música",
+      "image": "image/Profesiones/La_música.png"
     }
   ],
   "Sentimientos": [
